@@ -2,8 +2,8 @@
 
 A curated collection of Ultra-HD (4K / 5K / 8K), animated pixel art, and live desktop wallpapers organized by color shade and media format.
 
-![Wallpapers](https://img.shields.io/badge/Wallpapers-236-blue?style=flat-square&logo=images)
-![Total Size](https://img.shields.io/badge/Total%20Size-720.7%20MB-informational?style=flat-square)
+![Wallpapers](https://img.shields.io/badge/Wallpapers-237-blue?style=flat-square&logo=images)
+![Total Size](https://img.shields.io/badge/Total%20Size-720.9%20MB-informational?style=flat-square)
 ![Resolution](https://img.shields.io/badge/Resolution-1080p%20|%204K%20|%205K%20|%208K-blueviolet?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT%20/%20Personal-green?style=flat-square)
 ![Maintained](https://img.shields.io/badge/Maintained-Yes-success?style=flat-square)
@@ -17,7 +17,7 @@ A curated collection of Ultra-HD (4K / 5K / 8K), animated pixel art, and live de
 
 | Category | Wallpapers | Color & Style Highlights |
 | :--- | :---: | :--- |
-| [🌑 **Dark & Obsidian**](#dark-obsidian) | `48` | Deep blacks, OLED-friendly dark tones, cyber-noir, and midnight aesthetics. |
+| [🌑 **Dark & Obsidian**](#dark-obsidian) | `49` | Deep blacks, OLED-friendly dark tones, cyber-noir, and midnight aesthetics. |
 | [🌊 **Oceanic & Blue**](#oceanic-blue) | `62` | Calming azure, arctic Nord hues, alpine lakes, twilight skies, and cyan neon. |
 | [🔥 **Warm & Amber**](#warm-amber) | `36` | Fiery sunsets, autumn foliage, crimson anime scenes, and cozy amber glows. |
 | [🔮 **Purple & Neon**](#purple-neon) | `10` | Synthwave purples, violet twilight vistas, and electric magenta accents. |
@@ -29,7 +29,7 @@ A curated collection of Ultra-HD (4K / 5K / 8K), animated pixel art, and live de
 ---
 
 ## 🌑 Dark & Obsidian
-*Deep blacks, OLED-friendly dark tones, cyber-noir, and midnight aesthetics.* &nbsp;•&nbsp; **`48 wallpapers`**
+*Deep blacks, OLED-friendly dark tones, cyber-noir, and midnight aesthetics.* &nbsp;•&nbsp; **`49 wallpapers`**
 
 | Preview | Preview | Preview |
 | :---: | :---: | :---: |
@@ -48,7 +48,8 @@ A curated collection of Ultra-HD (4K / 5K / 8K), animated pixel art, and live de
 | <a href="dark/pure-black-minimal.jpg"><img src="previews/dark/pure-black-minimal.jpg.webp" width="240" alt="Pure Black Minimal" /></a><br /><sub>**Pure Black Minimal**<br />`4K UHD` • `16:9` • `127 KB`</sub> | <a href="dark/rain-world-slugcat-trio.png"><img src="previews/dark/rain-world-slugcat-trio.png.webp" width="240" alt="Rain World Slugcat Trio" /></a><br /><sub>**Rain World Slugcat Trio**<br />`1440p` • `2:1` • `3.0 MB`</sub> | <a href="dark/rocket-launch-smoke-plume.jpg"><img src="previews/dark/rocket-launch-smoke-plume.jpg.webp" width="240" alt="Rocket Launch Smoke Plume" /></a><br /><sub>**Rocket Launch Smoke Plume**<br />`4K UHD` • `16:9` • `270 KB`</sub> |
 | <a href="dark/samurai-lady-portrait.png"><img src="previews/dark/samurai-lady-portrait.png.webp" width="240" alt="Samurai Lady Portrait" /></a><br /><sub>**Samurai Lady Portrait**<br />`1080p` • `16:9` • `160 KB`</sub> | <a href="dark/shadow-colossus-horseman.png"><img src="previews/dark/shadow-colossus-horseman.png.webp" width="240" alt="Shadow Colossus Horseman" /></a><br /><sub>**Shadow Colossus Horseman**<br />`1080p` • `16:9` • `590 KB`</sub> | <a href="dark/spiderman-black-suit-crouch.jpg"><img src="previews/dark/spiderman-black-suit-crouch.jpg.webp" width="240" alt="Spiderman Black Suit Crouch" /></a><br /><sub>**Spiderman Black Suit Crouch**<br />`4K UHD` • `16:9` • `1.0 MB`</sub> |
 | <a href="dark/starlit-night-sky.jpg"><img src="previews/dark/starlit-night-sky.jpg.webp" width="240" alt="Starlit Night Sky" /></a><br /><sub>**Starlit Night Sky**<br />`1080p` • `16:10` • `171 KB`</sub> | <a href="dark/tokyo-lantern-night-street.jpg"><img src="previews/dark/tokyo-lantern-night-street.jpg.webp" width="240" alt="Tokyo Lantern Night Street" /></a><br /><sub>**Tokyo Lantern Night Street**<br />`1080p` • `16:9` • `241 KB`</sub> | <a href="dark/tokyo-neon-pink-alley.png"><img src="previews/dark/tokyo-neon-pink-alley.png.webp" width="240" alt="Tokyo Neon Pink Alley" /></a><br /><sub>**Tokyo Neon Pink Alley**<br />`5K` • `16:9` • `1015 KB`</sub> |
-| <a href="dark/wanderer-explore-mountains.jpg"><img src="previews/dark/wanderer-explore-mountains.jpg.webp" width="240" alt="Wanderer Explore Mountains" /></a><br /><sub>**Wanderer Explore Mountains**<br />`1080p` • `16:9` • `291 KB`</sub> | <a href="dark/windows-11-bloom-dark.jpg"><img src="previews/dark/windows-11-bloom-dark.jpg.webp" width="240" alt="Windows 11 Bloom Dark" /></a><br /><sub>**Windows 11 Bloom Dark**<br />`4K UHD` • `16:9` • `215 KB`</sub> | <a href="dark/windows-bloom-dark.jpg"><img src="previews/dark/windows-bloom-dark.jpg.webp" width="240" alt="Windows Bloom Dark" /></a><br /><sub>**Windows Bloom Dark**<br />`4K UHD` • `16:10` • `418 KB`</sub> |
+| <a href="dark/wallpaper-17895524.jpg"><img src="previews/dark/wallpaper-17895524.jpg.webp" width="240" alt="Wallpaper 17895524" /></a><br /><sub>**Wallpaper 17895524**<br />`1080p` • `16:9` • `278 KB`</sub> | <a href="dark/wanderer-explore-mountains.jpg"><img src="previews/dark/wanderer-explore-mountains.jpg.webp" width="240" alt="Wanderer Explore Mountains" /></a><br /><sub>**Wanderer Explore Mountains**<br />`1080p` • `16:9` • `291 KB`</sub> | <a href="dark/windows-11-bloom-dark.jpg"><img src="previews/dark/windows-11-bloom-dark.jpg.webp" width="240" alt="Windows 11 Bloom Dark" /></a><br /><sub>**Windows 11 Bloom Dark**<br />`4K UHD` • `16:9` • `215 KB`</sub> |
+| <a href="dark/windows-bloom-dark.jpg"><img src="previews/dark/windows-bloom-dark.jpg.webp" width="240" alt="Windows Bloom Dark" /></a><br /><sub>**Windows Bloom Dark**<br />`4K UHD` • `16:10` • `418 KB`</sub> | | |
 
 <p align="right"><a href="#🖼️-curated-desktop-wallpapers">⬆️ Back to Top</a></p>
 
