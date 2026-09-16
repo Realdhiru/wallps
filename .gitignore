@@ -1,0 +1,26 @@
+# Operating System & File Managers
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backup & Editor Swap Files
+*~
+*.bak
+*.swp
+*.swo
+*.tmp
+
+# Python & Environment
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+
+# IDE & Editor Folders
+.idea/
+.vscode/
+.antigravity/
+
+# Temporary / Log files
+*.log
