@@ -258,9 +258,37 @@ def generate_markdown(repo_dir, catalog):
     
     return "\n".join(lines)
 
+def cleanup_orphaned_previews(repo_dir):
+    previews_root = os.path.join(repo_dir, "previews")
+    if not os.path.isdir(previews_root):
+        return
+    orphans_removed = 0
+    for cat_key in CATEGORY_CONFIG.keys():
+        cat_preview_dir = os.path.join(previews_root, cat_key)
+        cat_src_dir = os.path.join(repo_dir, cat_key)
+        if not os.path.isdir(cat_preview_dir):
+            continue
+        for pf in os.listdir(cat_preview_dir):
+            if not pf.endswith(".webp"):
+                continue
+            orig_filename = pf[:-5]
+            orig_path = os.path.join(cat_src_dir, orig_filename)
+            if not os.path.isfile(orig_path):
+                orphan_file = os.path.join(cat_preview_dir, pf)
+                try:
+                    os.remove(orphan_file)
+                    orphans_removed += 1
+                    print(f"Purged orphan preview: previews/{cat_key}/{pf}")
+                except OSError:
+                    pass
+    if orphans_removed > 0:
+        print(f"Purged {orphans_removed} orphaned preview(s).")
+
 def main():
     repo_dir = sys.argv[1] if len(sys.argv) > 1 else os.getcwd()
     print(f"Scanning repository at: {repo_dir}")
+    
+    cleanup_orphaned_previews(repo_dir)
     
     catalog = {}
     total_scanned = 0

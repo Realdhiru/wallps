@@ -271,6 +271,55 @@ def process_file(filepath):
 
     return dest_path
 
+def handle_delete(filepath):
+    path = Path(filepath)
+    try:
+        rel = path.relative_to(REPO_DIR)
+    except ValueError:
+        try:
+            rel = path.resolve().relative_to(REPO_DIR.resolve())
+        except ValueError:
+            return
+
+    parts = rel.parts
+    if len(parts) >= 2 and parts[0] in KNOWN_CATEGORIES:
+        category = parts[0]
+        filename = parts[-1]
+
+        # Purge corresponding preview
+        preview_path = REPO_DIR / "previews" / category / f"{filename}.webp"
+        if preview_path.exists():
+            try:
+                preview_path.unlink()
+                print(f"Purged preview: {preview_path.relative_to(REPO_DIR)}")
+            except OSError:
+                pass
+
+        # Purge source file if it still exists
+        source_path = REPO_DIR / category / filename
+        if source_path.exists():
+            try:
+                source_path.unlink()
+            except OSError:
+                pass
+
+        # Regenerate gallery and clean any orphaned previews
+        print(f"Updating gallery after deleting {filename}...")
+        subprocess.run(["python3", str(REPO_DIR / "scripts" / "generate_gallery.py"), str(REPO_DIR)],
+                       check=True)
+
+        # Auto Git Commit & Push
+        try:
+            subprocess.run(["git", "add", "-A"], cwd=REPO_DIR, check=True)
+            diff_check = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=REPO_DIR)
+            if diff_check.returncode != 0:
+                commit_msg = f"Delete wallpaper: {filename} ({category})"
+                subprocess.run(["git", "commit", "-m", commit_msg], cwd=REPO_DIR, check=True)
+                subprocess.Popen(["git", "push", "origin", "main"], cwd=REPO_DIR)
+                print(f"Auto-committed and pushed deletion of {filename}")
+        except subprocess.CalledProcessError as e:
+            print(f"Git commit error: {e}")
+
 def scan_root_inbox():
     # Scan root of REPO_DIR for loose wallpapers
     for entry in os.listdir(REPO_DIR):
@@ -280,7 +329,13 @@ def scan_root_inbox():
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
-        target = sys.argv[1]
-        process_file(target)
+        if sys.argv[1] == "--delete" and len(sys.argv) > 2:
+            handle_delete(sys.argv[2])
+        elif sys.argv[1] == "--sync":
+            scan_root_inbox()
+            subprocess.run(["python3", str(REPO_DIR / "scripts" / "generate_gallery.py"), str(REPO_DIR)], check=True)
+        else:
+            process_file(sys.argv[1])
     else:
         scan_root_inbox()
+
