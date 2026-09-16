@@ -1,0 +1,14 @@
+[Unit]
+Description=Automated Wallpaper Ingest & Gallery Watcher Daemon
+After=default.target
+
+[Service]
+Type=simple
+ExecStart=/home/realdhiru/Pictures/Wallpapers/scripts/wallpaper_watcher.sh
+WorkingDirectory=/home/realdhiru/Pictures/Wallpapers
+Restart=on-failure
+RestartSec=5s
+Environment="PATH=/run/current-system/sw/bin:/etc/profiles/per-user/realdhiru/bin:/home/realdhiru/.nix-profile/bin"
+
+[Install]
+WantedBy=default.target
