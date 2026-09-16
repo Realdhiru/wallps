@@ -10,6 +10,7 @@ rebuilds the README gallery, and auto-commits to Git.
 import os
 import sys
 import re
+import time
 import shutil
 import subprocess
 import colorsys
@@ -20,6 +21,15 @@ from pathlib import Path
 REPO_DIR = Path(__file__).resolve().parent.parent
 VALID_EXTS = {".jpg", ".jpeg", ".png", ".gif", ".mp4", ".webp"}
 KNOWN_CATEGORIES = {"dark", "blue", "warm", "purple", "green", "light", "gifs", "videos"}
+
+PICKER_ACTIVE_PATHS = [
+    Path(f"/run/user/{os.getuid()}/quickshell/wallpaper_picker/picker_active"),
+    Path("/tmp/quickshell/wallpaper_picker/picker_active"),
+]
+
+def is_picker_active():
+    """Returns True if QuickShell wallpaper picker is currently open/active."""
+    return any(p.exists() for p in PICKER_ACTIVE_PATHS)
 
 SEARCH_MAP_PATHS = [
     Path.home() / ".cache" / "quickshell" / "wallpaper_picker" / "search_map.txt",
@@ -195,7 +205,7 @@ def update_active_wallpaper_references(old_path, new_path):
     except Exception:
         pass
 
-def process_file(filepath):
+def process_file(filepath, force=False):
     path = Path(filepath).resolve()
     if not path.is_file():
         return None
@@ -231,6 +241,11 @@ def process_file(filepath):
             update_active_wallpaper_references(path, dest_path)
     # Case 2: File is dropped in repository root or needs categorization
     else:
+        # If the QuickShell wallpaper picker is currently open/active, do not shift yet
+        if is_picker_active() and not force:
+            print(f"Skipping {path.name}: wallpaper picker is currently active (will organize on close)")
+            return None
+
         clean_name = sanitize_name(path.name)
         if ext == ".gif":
             category = "gifs"
@@ -259,9 +274,10 @@ def process_file(filepath):
     subprocess.run(["python3", str(REPO_DIR / "scripts" / "generate_gallery.py"), str(REPO_DIR)],
                    check=True)
 
-    # Auto Git Commit & Push
+    # Auto Git Commit & Push (safely stage only organized destination, README, and previews)
     try:
-        subprocess.run(["git", "add", "-A"], cwd=REPO_DIR, check=True)
+        rel_dest = str(dest_path.relative_to(REPO_DIR))
+        subprocess.run(["git", "add", "README.md", "previews/", rel_dest], cwd=REPO_DIR, check=True)
         commit_msg = f"Auto-add wallpaper: {dest_path.name} ({category})"
         subprocess.run(["git", "commit", "-m", commit_msg], cwd=REPO_DIR, check=True)
         subprocess.Popen(["git", "push", "origin", "main"], cwd=REPO_DIR)
@@ -308,9 +324,10 @@ def handle_delete(filepath):
         subprocess.run(["python3", str(REPO_DIR / "scripts" / "generate_gallery.py"), str(REPO_DIR)],
                        check=True)
 
-        # Auto Git Commit & Push
+        # Auto Git Commit & Push (safely stage only category folder, README, and previews)
         try:
-            subprocess.run(["git", "add", "-A"], cwd=REPO_DIR, check=True)
+            subprocess.run(["git", "add", "-u", category], cwd=REPO_DIR, check=True)
+            subprocess.run(["git", "add", "README.md", "previews/"], cwd=REPO_DIR, check=True)
             diff_check = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=REPO_DIR)
             if diff_check.returncode != 0:
                 commit_msg = f"Delete wallpaper: {filename} ({category})"
@@ -320,20 +337,22 @@ def handle_delete(filepath):
         except subprocess.CalledProcessError as e:
             print(f"Git commit error: {e}")
 
-def scan_root_inbox():
+def scan_root_inbox(force=False):
     # Scan root of REPO_DIR for loose wallpapers
     for entry in os.listdir(REPO_DIR):
         p = REPO_DIR / entry
         if p.is_file() and p.suffix.lower() in VALID_EXTS:
-            process_file(p)
+            process_file(p, force=force)
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
         if sys.argv[1] == "--delete" and len(sys.argv) > 2:
             handle_delete(sys.argv[2])
         elif sys.argv[1] == "--sync":
-            scan_root_inbox()
+            scan_root_inbox(force=True)
             subprocess.run(["python3", str(REPO_DIR / "scripts" / "generate_gallery.py"), str(REPO_DIR)], check=True)
+        elif sys.argv[1] in ("--force", "--now"):
+            scan_root_inbox(force=True)
         else:
             process_file(sys.argv[1])
     else:
