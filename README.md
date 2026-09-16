@@ -2,8 +2,8 @@
 
 A curated collection of Ultra-HD (4K / 5K / 8K), animated pixel art, and live desktop wallpapers organized by color shade and media format.
 
-![Wallpapers](https://img.shields.io/badge/Wallpapers-219-blue?style=flat-square&logo=images)
-![Total Size](https://img.shields.io/badge/Total%20Size-710.9%20MB-informational?style=flat-square)
+![Wallpapers](https://img.shields.io/badge/Wallpapers-220-blue?style=flat-square&logo=images)
+![Total Size](https://img.shields.io/badge/Total%20Size-711.9%20MB-informational?style=flat-square)
 ![Resolution](https://img.shields.io/badge/Resolution-1080p%20|%204K%20|%205K%20|%208K-blueviolet?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT%20/%20Personal-green?style=flat-square)
 ![Maintained](https://img.shields.io/badge/Maintained-Yes-success?style=flat-square)
@@ -19,7 +19,7 @@ A curated collection of Ultra-HD (4K / 5K / 8K), animated pixel art, and live de
 | :--- | :---: | :--- |
 | [🌑 **Dark & Obsidian**](#dark-obsidian) | `48` | Deep blacks, OLED-friendly dark tones, cyber-noir, and midnight aesthetics. |
 | [🌊 **Oceanic & Blue**](#oceanic-blue) | `59` | Calming azure, arctic Nord hues, alpine lakes, twilight skies, and cyan neon. |
-| [🔥 **Warm & Amber**](#warm-amber) | `33` | Fiery sunsets, autumn foliage, crimson anime scenes, and cozy amber glows. |
+| [🔥 **Warm & Amber**](#warm-amber) | `34` | Fiery sunsets, autumn foliage, crimson anime scenes, and cozy amber glows. |
 | [🔮 **Purple & Neon**](#purple-neon) | `10` | Synthwave purples, violet twilight vistas, and electric magenta accents. |
 | [🍃 **Verdant & Green**](#verdant-green) | `10` | Lush alpine meadows, mossy waterfalls, rolling hills, and pastoral serenity. |
 | [☀️ **Light & Minimal**](#light-minimal) | `7` | Clean high-key compositions, delicate watercolor, zen ink, and airy aesthetics. |
@@ -85,7 +85,7 @@ A curated collection of Ultra-HD (4K / 5K / 8K), animated pixel art, and live de
 ---
 
 ## 🔥 Warm & Amber
-*Fiery sunsets, autumn foliage, crimson anime scenes, and cozy amber glows.* &nbsp;•&nbsp; **`33 wallpapers`**
+*Fiery sunsets, autumn foliage, crimson anime scenes, and cozy amber glows.* &nbsp;•&nbsp; **`34 wallpapers`**
 
 | Preview | Preview | Preview |
 | :---: | :---: | :---: |
@@ -99,7 +99,8 @@ A curated collection of Ultra-HD (4K / 5K / 8K), animated pixel art, and live de
 | <a href="warm/kyoto-canal-cherry-blossoms.jpg"><img src="previews/warm/kyoto-canal-cherry-blossoms.jpg.webp" width="240" alt="Kyoto Canal Cherry Blossoms" /></a><br /><sub>**Kyoto Canal Cherry Blossoms**<br />`1440p` • `3:2` • `1.3 MB`</sub> | <a href="warm/naruto-shippuden-team-konoha.jpg"><img src="previews/warm/naruto-shippuden-team-konoha.jpg.webp" width="240" alt="Naruto Shippuden Team Konoha" /></a><br /><sub>**Naruto Shippuden Team Konoha**<br />`4K UHD` • `19:10` • `618 KB`</sub> | <a href="warm/nier-automata-2b-monochrome.jpg"><img src="previews/warm/nier-automata-2b-monochrome.jpg.webp" width="240" alt="Nier Automata 2B Monochrome" /></a><br /><sub>**Nier Automata 2B Monochrome**<br />`1080p` • `16:9` • `1010 KB`</sub> |
 | <a href="warm/overgrown-red-telephone-booth.png"><img src="previews/warm/overgrown-red-telephone-booth.png.webp" width="240" alt="Overgrown Red Telephone Booth" /></a><br /><sub>**Overgrown Red Telephone Booth**<br />`4K UHD` • `16:9` • `4.8 MB`</sub> | <a href="warm/pokemon-johto-region-map.jpg"><img src="previews/warm/pokemon-johto-region-map.jpg.webp" width="240" alt="Pokemon Johto Region Map" /></a><br /><sub>**Pokemon Johto Region Map**<br />`1080p` • `16:10` • `256 KB`</sub> | <a href="warm/samurai-duel-silhouette.png"><img src="previews/warm/samurai-duel-silhouette.png.webp" width="240" alt="Samurai Duel Silhouette" /></a><br /><sub>**Samurai Duel Silhouette**<br />`1080p` • `23:12` • `171 KB`</sub> |
 | <a href="warm/sekiro-senpou-temple-autumn.png"><img src="previews/warm/sekiro-senpou-temple-autumn.png.webp" width="240" alt="Sekiro Senpou Temple Autumn" /></a><br /><sub>**Sekiro Senpou Temple Autumn**<br />`1919x1079` • `16:9` • `3.3 MB`</sub> | <a href="warm/spacecraft-orbit-planet.jpg"><img src="previews/warm/spacecraft-orbit-planet.jpg.webp" width="240" alt="Spacecraft Orbit Planet" /></a><br /><sub>**Spacecraft Orbit Planet**<br />`8K UHD` • `16:9` • `14.6 MB`</sub> | <a href="warm/stormveil-castle-elden-ring.jpg"><img src="previews/warm/stormveil-castle-elden-ring.jpg.webp" width="240" alt="Stormveil Castle Elden Ring" /></a><br /><sub>**Stormveil Castle Elden Ring**<br />`4K UHD` • `16:9` • `5.4 MB`</sub> |
-| <a href="warm/sun-garden-temple.png"><img src="previews/warm/sun-garden-temple.png.webp" width="240" alt="Sun Garden Temple" /></a><br /><sub>**Sun Garden Temple**<br />`4K UHD` • `16:9` • `2.2 MB`</sub> | <a href="warm/vintage-tokyo-street-crossing.jpg"><img src="previews/warm/vintage-tokyo-street-crossing.jpg.webp" width="240" alt="Vintage Tokyo Street Crossing" /></a><br /><sub>**Vintage Tokyo Street Crossing**<br />`4K UHD` • `3:2` • `1019 KB`</sub> | <a href="warm/windows-11-bloom-light.jpg"><img src="previews/warm/windows-11-bloom-light.jpg.webp" width="240" alt="Windows 11 Bloom Light" /></a><br /><sub>**Windows 11 Bloom Light**<br />`4K UHD` • `16:10` • `467 KB`</sub> |
+| <a href="warm/sun-garden-temple.png"><img src="previews/warm/sun-garden-temple.png.webp" width="240" alt="Sun Garden Temple" /></a><br /><sub>**Sun Garden Temple**<br />`4K UHD` • `16:9` • `2.2 MB`</sub> | <a href="warm/vintage-tokyo-street-crossing.jpg"><img src="previews/warm/vintage-tokyo-street-crossing.jpg.webp" width="240" alt="Vintage Tokyo Street Crossing" /></a><br /><sub>**Vintage Tokyo Street Crossing**<br />`4K UHD` • `3:2` • `1019 KB`</sub> | <a href="warm/wallpaper-17895419.jpg"><img src="previews/warm/wallpaper-17895419.jpg.webp" width="240" alt="Wallpaper 17895419" /></a><br /><sub>**Wallpaper 17895419**<br />`1440p` • `4:3` • `1.1 MB`</sub> |
+| <a href="warm/windows-11-bloom-light.jpg"><img src="previews/warm/windows-11-bloom-light.jpg.webp" width="240" alt="Windows 11 Bloom Light" /></a><br /><sub>**Windows 11 Bloom Light**<br />`4K UHD` • `16:10` • `467 KB`</sub> | | |
 
 <p align="right"><a href="#🖼️-curated-desktop-wallpapers">⬆️ Back to Top</a></p>
 
