@@ -141,6 +141,22 @@ def process_file(filepath):
         shutil.move(str(path), str(dest_path))
         print(f"📦 Auto-moved: {path.name} -> {category}/{dest_path.name}")
 
+        # Update current and last wallpaper references if the active wallpaper was moved
+        current_txt = Path.home() / ".cache" / "current_wallpaper.txt"
+        last_txt = Path.home() / ".cache" / "last_wallpaper.txt"
+        for txt in (current_txt, last_txt):
+            try:
+                if txt.exists() and txt.read_text().strip() == str(path.resolve()):
+                    txt.write_text(str(dest_path.resolve()) + "\n")
+            except Exception:
+                pass
+
+        # Trigger desktop wallpaper thumbnail indexing
+        try:
+            subprocess.Popen([str(Path.home() / ".config" / "hypr" / "scripts" / "wallpaper_thumbnail.sh")])
+        except Exception:
+            pass
+
     # Regenerate gallery and preview
     print("🎨 Updating previews and README...")
     subprocess.run(["python3", str(REPO_DIR / "scripts" / "generate_gallery.py"), str(REPO_DIR)],

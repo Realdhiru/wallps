@@ -2,8 +2,8 @@
 
 A curated collection of Ultra-HD (4K / 5K / 8K), animated pixel art, and live desktop wallpapers organized by color shade and media format.
 
-![Wallpapers](https://img.shields.io/badge/Wallpapers-216-blue?style=flat-square&logo=images)
-![Total Size](https://img.shields.io/badge/Total%20Size-710.4%20MB-informational?style=flat-square)
+![Wallpapers](https://img.shields.io/badge/Wallpapers-217-blue?style=flat-square&logo=images)
+![Total Size](https://img.shields.io/badge/Total%20Size-710.5%20MB-informational?style=flat-square)
 ![Resolution](https://img.shields.io/badge/Resolution-1080p%20|%204K%20|%205K%20|%208K-blueviolet?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT%20/%20Personal-green?style=flat-square)
 ![Maintained](https://img.shields.io/badge/Maintained-Yes-success?style=flat-square)
@@ -20,7 +20,7 @@ A curated collection of Ultra-HD (4K / 5K / 8K), animated pixel art, and live de
 | [🌑 **Dark & Obsidian**](#dark-obsidian) | `48` | Deep blacks, OLED-friendly dark tones, cyber-noir, and midnight aesthetics. |
 | [🌊 **Oceanic & Blue**](#oceanic-blue) | `58` | Calming azure, arctic Nord hues, alpine lakes, twilight skies, and cyan neon. |
 | [🔥 **Warm & Amber**](#warm-amber) | `33` | Fiery sunsets, autumn foliage, crimson anime scenes, and cozy amber glows. |
-| [🔮 **Purple & Neon**](#purple-neon) | `8` | Synthwave purples, violet twilight vistas, and electric magenta accents. |
+| [🔮 **Purple & Neon**](#purple-neon) | `9` | Synthwave purples, violet twilight vistas, and electric magenta accents. |
 | [🍃 **Verdant & Green**](#verdant-green) | `10` | Lush alpine meadows, mossy waterfalls, rolling hills, and pastoral serenity. |
 | [☀️ **Light & Minimal**](#light-minimal) | `7` | Clean high-key compositions, delicate watercolor, zen ink, and airy aesthetics. |
 | [👾 **Animated GIFs**](#animated-gifs) | `47` | Nostalgic pixel art scenes, 16-bit animations, and relaxing lofi loops. |
@@ -106,13 +106,13 @@ A curated collection of Ultra-HD (4K / 5K / 8K), animated pixel art, and live de
 ---
 
 ## 🔮 Purple & Neon
-*Synthwave purples, violet twilight vistas, and electric magenta accents.* &nbsp;•&nbsp; **`8 wallpapers`**
+*Synthwave purples, violet twilight vistas, and electric magenta accents.* &nbsp;•&nbsp; **`9 wallpapers`**
 
 | Preview | Preview | Preview |
 | :---: | :---: | :---: |
 | <a href="purple/bubbles-water-purple.jpg"><img src="previews/purple/bubbles-water-purple.jpg.webp" width="240" alt="Bubbles Water Purple" /></a><br /><sub>**Bubbles Water Purple**<br />`4K UHD` • `16:9` • `468 KB`</sub> | <a href="purple/cowboy-bebop-spike-silhouette.png"><img src="previews/purple/cowboy-bebop-spike-silhouette.png.webp" width="240" alt="Cowboy Bebop Spike Silhouette" /></a><br /><sub>**Cowboy Bebop Spike Silhouette**<br />`4K UHD` • `16:9` • `394 KB`</sub> | <a href="purple/cowboy-bebop-spike-spiegel.png"><img src="previews/purple/cowboy-bebop-spike-spiegel.png.webp" width="240" alt="Cowboy Bebop Spike Spiegel" /></a><br /><sub>**Cowboy Bebop Spike Spiegel**<br />`4K UHD` • `16:9` • `3.7 MB`</sub> |
 | <a href="purple/firewatch-sunset-valley.jpg"><img src="previews/purple/firewatch-sunset-valley.jpg.webp" width="240" alt="Firewatch Sunset Valley" /></a><br /><sub>**Firewatch Sunset Valley**<br />`8K UHD` • `16:9` • `1.5 MB`</sub> | <a href="purple/mountain-dragon-pink-sky.jpg"><img src="previews/purple/mountain-dragon-pink-sky.jpg.webp" width="240" alt="Mountain Dragon Pink Sky" /></a><br /><sub>**Mountain Dragon Pink Sky**<br />`5K` • `16:9` • `10.6 MB`</sub> | <a href="purple/pearl-dark-abstract.jpg"><img src="previews/purple/pearl-dark-abstract.jpg.webp" width="240" alt="Pearl Dark Abstract" /></a><br /><sub>**Pearl Dark Abstract**<br />`5K` • `16:9` • `10.6 MB`</sub> |
-| <a href="purple/purple-snowy-pine-forest.png"><img src="previews/purple/purple-snowy-pine-forest.png.webp" width="240" alt="Purple Snowy Pine Forest" /></a><br /><sub>**Purple Snowy Pine Forest**<br />`1080p` • `16:9` • `1.0 MB`</sub> | <a href="purple/red-fox-snowy-woods.jpg"><img src="previews/purple/red-fox-snowy-woods.jpg.webp" width="240" alt="Red Fox Snowy Woods" /></a><br /><sub>**Red Fox Snowy Woods**<br />`5K` • `5:3` • `8.0 MB`</sub> | |
+| <a href="purple/purple-snowy-pine-forest.png"><img src="previews/purple/purple-snowy-pine-forest.png.webp" width="240" alt="Purple Snowy Pine Forest" /></a><br /><sub>**Purple Snowy Pine Forest**<br />`1080p` • `16:9` • `1.0 MB`</sub> | <a href="purple/red-fox-snowy-woods.jpg"><img src="previews/purple/red-fox-snowy-woods.jpg.webp" width="240" alt="Red Fox Snowy Woods" /></a><br /><sub>**Red Fox Snowy Woods**<br />`5K` • `5:3` • `8.0 MB`</sub> | <a href="purple/wallpaper-17895419.jpg"><img src="previews/purple/wallpaper-17895419.jpg.webp" width="240" alt="Wallpaper 17895419" /></a><br /><sub>**Wallpaper 17895419**<br />`1080p` • `16:9` • `130 KB`</sub> |
 
 <p align="right"><a href="#🖼️-curated-desktop-wallpapers">⬆️ Back to Top</a></p>
 
