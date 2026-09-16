@@ -8,6 +8,7 @@ and renders an elegant, responsive GitHub showcase gallery organized by color sh
 
 import os
 import sys
+import shutil
 import subprocess
 import urllib.parse
 from fractions import Fraction
@@ -169,7 +170,8 @@ def extract_metadata_and_preview(repo_dir, category, filename):
             pass
 
         if needs_gen:
-            cmd = ["magick", f"{source_path}[0]", "-resize", "640x360>",
+            im_cmd = "magick" if shutil.which("magick") else "convert"
+            cmd = [im_cmd, f"{source_path}[0]", "-resize", "640x360>",
                    "-quality", "82", preview_path]
             subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 

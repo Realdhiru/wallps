@@ -45,7 +45,8 @@ def sanitize_name(filename):
     return f"{clean}{ext}"
 
 def classify_static(filepath):
-    cmd = ["magick", str(filepath), "-resize", "32x32!", "-depth", "8", "rgb:-"]
+    im_cmd = "magick" if shutil.which("magick") else "convert"
+    cmd = [im_cmd, str(filepath), "-resize", "32x32!", "-depth", "8", "rgb:-"]
     proc = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL)
     raw = proc.stdout
     if len(raw) != 3072:
