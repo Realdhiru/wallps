@@ -2,8 +2,8 @@
 
 A curated collection of Ultra-HD (4K / 5K / 8K), animated pixel art, and live desktop wallpapers organized by color shade and media format.
 
-![Wallpapers](https://img.shields.io/badge/Wallpapers-234-blue?style=flat-square&logo=images)
-![Total Size](https://img.shields.io/badge/Total%20Size-718.5%20MB-informational?style=flat-square)
+![Wallpapers](https://img.shields.io/badge/Wallpapers-235-blue?style=flat-square&logo=images)
+![Total Size](https://img.shields.io/badge/Total%20Size-720.2%20MB-informational?style=flat-square)
 ![Resolution](https://img.shields.io/badge/Resolution-1080p%20|%204K%20|%205K%20|%208K-blueviolet?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT%20/%20Personal-green?style=flat-square)
 ![Maintained](https://img.shields.io/badge/Maintained-Yes-success?style=flat-square)
@@ -23,7 +23,7 @@ A curated collection of Ultra-HD (4K / 5K / 8K), animated pixel art, and live de
 | [🔮 **Purple & Neon**](#purple-neon) | `10` | Synthwave purples, violet twilight vistas, and electric magenta accents. |
 | [🍃 **Verdant & Green**](#verdant-green) | `10` | Lush alpine meadows, mossy waterfalls, rolling hills, and pastoral serenity. |
 | [☀️ **Light & Minimal**](#light-minimal) | `7` | Clean high-key compositions, delicate watercolor, zen ink, and airy aesthetics. |
-| [👾 **Animated GIFs**](#animated-gifs) | `57` | Nostalgic pixel art scenes, 16-bit animations, and relaxing lofi loops. |
+| [👾 **Animated GIFs**](#animated-gifs) | `58` | Nostalgic pixel art scenes, 16-bit animations, and relaxing lofi loops. |
 | [🎬 **Live Wallpapers**](#live-wallpapers) | `5` | Ultra-HD MP4 live video wallpapers suitable for mpvpaper, swww, or awallpaper. |
 
 ---
@@ -149,7 +149,7 @@ A curated collection of Ultra-HD (4K / 5K / 8K), animated pixel art, and live de
 ---
 
 ## 👾 Animated GIFs
-*Nostalgic pixel art scenes, 16-bit animations, and relaxing lofi loops.* &nbsp;•&nbsp; **`57 wallpapers`**
+*Nostalgic pixel art scenes, 16-bit animations, and relaxing lofi loops.* &nbsp;•&nbsp; **`58 wallpapers`**
 
 | Preview | Preview | Preview |
 | :---: | :---: | :---: |
@@ -171,7 +171,8 @@ A curated collection of Ultra-HD (4K / 5K / 8K), animated pixel art, and live de
 | <a href="gifs/wallpaper-17895523-1.gif"><img src="previews/gifs/wallpaper-17895523-1.gif.webp" width="240" alt="Wallpaper 17895523 1" /></a><br /><sub>**Wallpaper 17895523 1**<br />`1080p • Animated` • `13:7` • `379 KB`</sub> | <a href="gifs/wallpaper-17895523-2.gif"><img src="previews/gifs/wallpaper-17895523-2.gif.webp" width="240" alt="Wallpaper 17895523 2" /></a><br /><sub>**Wallpaper 17895523 2**<br />`1080p • Animated` • `12:7` • `498 KB`</sub> | <a href="gifs/wallpaper-17895523.gif"><img src="previews/gifs/wallpaper-17895523.gif.webp" width="240" alt="Wallpaper 17895523" /></a><br /><sub>**Wallpaper 17895523**<br />`1080p • Animated` • `14:9` • `513 KB`</sub> |
 | <a href="gifs/wallpaper-17895524-1.gif"><img src="previews/gifs/wallpaper-17895524-1.gif.webp" width="240" alt="Wallpaper 17895524 1" /></a><br /><sub>**Wallpaper 17895524 1**<br />`1080p • Animated` • `16:9` • `507 KB`</sub> | <a href="gifs/wallpaper-17895524-2.gif"><img src="previews/gifs/wallpaper-17895524-2.gif.webp" width="240" alt="Wallpaper 17895524 2" /></a><br /><sub>**Wallpaper 17895524 2**<br />`1080p • Animated` • `16:9` • `638 KB`</sub> | <a href="gifs/wallpaper-17895524-3.gif"><img src="previews/gifs/wallpaper-17895524-3.gif.webp" width="240" alt="Wallpaper 17895524 3" /></a><br /><sub>**Wallpaper 17895524 3**<br />`1080p • Animated` • `2:1` • `923 KB`</sub> |
 | <a href="gifs/wallpaper-17895524-4.gif"><img src="previews/gifs/wallpaper-17895524-4.gif.webp" width="240" alt="Wallpaper 17895524 4" /></a><br /><sub>**Wallpaper 17895524 4**<br />`1080p • Animated` • `16:9` • `651 KB`</sub> | <a href="gifs/wallpaper-17895524-5.gif"><img src="previews/gifs/wallpaper-17895524-5.gif.webp" width="240" alt="Wallpaper 17895524 5" /></a><br /><sub>**Wallpaper 17895524 5**<br />`1080p • Animated` • `16:9` • `286 KB`</sub> | <a href="gifs/wallpaper-17895524-6.gif"><img src="previews/gifs/wallpaper-17895524-6.gif.webp" width="240" alt="Wallpaper 17895524 6" /></a><br /><sub>**Wallpaper 17895524 6**<br />`1080p • Animated` • `2:1` • `277 KB`</sub> |
-| <a href="gifs/wallpaper-17895524.gif"><img src="previews/gifs/wallpaper-17895524.gif.webp" width="240" alt="Wallpaper 17895524" /></a><br /><sub>**Wallpaper 17895524**<br />`1080p • Animated` • `16:9` • `1.1 MB`</sub> | <a href="gifs/waneella-japanese-train.gif"><img src="previews/gifs/waneella-japanese-train.gif.webp" width="240" alt="Waneella Japanese Train" /></a><br /><sub>**Waneella Japanese Train**<br />`1280x720 • Animated` • `16:9` • `484 KB`</sub> | <a href="gifs/waneella-monster-alley.gif"><img src="previews/gifs/waneella-monster-alley.gif.webp" width="240" alt="Waneella Monster Alley" /></a><br /><sub>**Waneella Monster Alley**<br />`960x540 • Animated` • `16:9` • `1.7 MB`</sub> |
+| <a href="gifs/wallpaper-17895524-7.gif"><img src="previews/gifs/wallpaper-17895524-7.gif.webp" width="240" alt="Wallpaper 17895524 7" /></a><br /><sub>**Wallpaper 17895524 7**<br />`1080p • Animated` • `16:9` • `1.7 MB`</sub> | <a href="gifs/wallpaper-17895524.gif"><img src="previews/gifs/wallpaper-17895524.gif.webp" width="240" alt="Wallpaper 17895524" /></a><br /><sub>**Wallpaper 17895524**<br />`1080p • Animated` • `16:9` • `1.1 MB`</sub> | <a href="gifs/waneella-japanese-train.gif"><img src="previews/gifs/waneella-japanese-train.gif.webp" width="240" alt="Waneella Japanese Train" /></a><br /><sub>**Waneella Japanese Train**<br />`1280x720 • Animated` • `16:9` • `484 KB`</sub> |
+| <a href="gifs/waneella-monster-alley.gif"><img src="previews/gifs/waneella-monster-alley.gif.webp" width="240" alt="Waneella Monster Alley" /></a><br /><sub>**Waneella Monster Alley**<br />`960x540 • Animated` • `16:9` • `1.7 MB`</sub> | | |
 
 <p align="right"><a href="#🖼️-curated-desktop-wallpapers">⬆️ Back to Top</a></p>
 
