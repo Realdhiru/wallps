@@ -2,8 +2,8 @@
 """
 scripts/generate_gallery.py
 Automated wallpaper preview generator and GitHub README gallery builder.
-Preserves 100% of original wallpapers, generates lightweight WebP thumbnails,
-and renders an elegant, responsive GitHub showcase gallery organized by color shade and media.
+Preserves original wallpapers, generates lightweight WebP thumbnails,
+and renders a clean, minimal GitHub showcase gallery organized by color shade and media.
 """
 
 import os
@@ -15,46 +15,14 @@ from fractions import Fraction
 from pathlib import Path
 
 CATEGORY_CONFIG = {
-    "dark": {
-        "title": "Dark & Obsidian",
-        "emoji": "🌑",
-        "description": "Deep blacks, OLED-friendly dark tones, cyber-noir, and midnight aesthetics."
-    },
-    "blue": {
-        "title": "Oceanic & Blue",
-        "emoji": "🌊",
-        "description": "Calming azure, arctic Nord hues, alpine lakes, twilight skies, and cyan neon."
-    },
-    "warm": {
-        "title": "Warm & Amber",
-        "emoji": "🔥",
-        "description": "Fiery sunsets, autumn foliage, crimson anime scenes, and cozy amber glows."
-    },
-    "purple": {
-        "title": "Purple & Neon",
-        "emoji": "🔮",
-        "description": "Synthwave purples, violet twilight vistas, and electric magenta accents."
-    },
-    "green": {
-        "title": "Verdant & Green",
-        "emoji": "🍃",
-        "description": "Lush alpine meadows, mossy waterfalls, rolling hills, and pastoral serenity."
-    },
-    "light": {
-        "title": "Light & Minimal",
-        "emoji": "☀️",
-        "description": "Clean high-key compositions, delicate watercolor, zen ink, and airy aesthetics."
-    },
-    "gifs": {
-        "title": "Animated GIFs",
-        "emoji": "👾",
-        "description": "Nostalgic pixel art scenes, 16-bit animations, and relaxing lofi loops."
-    },
-    "videos": {
-        "title": "Live Wallpapers",
-        "emoji": "🎬",
-        "description": "Ultra-HD MP4 live video wallpapers suitable for mpvpaper, swww, or awallpaper."
-    }
+    "dark": {"title": "Dark"},
+    "blue": {"title": "Blue"},
+    "warm": {"title": "Warm"},
+    "purple": {"title": "Purple"},
+    "green": {"title": "Green"},
+    "light": {"title": "Light"},
+    "gifs": {"title": "GIFs"},
+    "videos": {"title": "Videos"},
 }
 
 VALID_EXTENSIONS = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".mp4"}
@@ -90,9 +58,9 @@ def get_aspect_ratio(w, h):
 
 def get_resolution_badge(w, h, ext):
     if ext == ".mp4":
-        res_label = "Live Video"
+        res_label = "Video"
     elif ext == ".gif":
-        res_label = "Animated"
+        res_label = "GIF"
     else:
         res_label = ""
 
@@ -118,11 +86,8 @@ def get_resolution_badge(w, h, ext):
 
 def clean_display_title(filename):
     stem = Path(filename).stem
-    # Replace dashes and underscores with spaces
     title = stem.replace("_", " ").replace("-", " ")
-    # Clean up multiple spaces
     title = " ".join(title.split())
-    # Title-case each word
     title = title.title()
     if len(title) > 30:
         title = title[:28] + "…"
@@ -194,35 +159,19 @@ def extract_metadata_and_preview(repo_dir, category, filename):
     }
 
 def generate_markdown(repo_dir, catalog):
-    total_count = sum(len(items) for items in catalog.values())
-    total_bytes = sum(sum(item["size_bytes"] for item in items) for items in catalog.values())
-    
     lines = []
-    lines.append("# 🖼️ Curated Desktop Wallpapers")
+    lines.append("# Wallpapers")
     lines.append("")
-    lines.append("A curated collection of Ultra-HD (4K / 5K / 8K), animated pixel art, and live desktop wallpapers organized by color shade and media format.")
+    lines.append("Curated desktop wallpapers organized by shade and media format.")
     lines.append("")
-    lines.append(f"![Wallpapers](https://img.shields.io/badge/Wallpapers-{total_count}-blue?style=flat-square&logo=images)")
-    lines.append(f"![Total Size](https://img.shields.io/badge/Total%20Size-{format_size(total_bytes).replace(' ', '%20')}-informational?style=flat-square)")
-    lines.append("![Resolution](https://img.shields.io/badge/Resolution-1080p%20|%204K%20|%205K%20|%208K-blueviolet?style=flat-square)")
-    lines.append("![License](https://img.shields.io/badge/License-MIT%20/%20Personal-green?style=flat-square)")
-    lines.append("![Maintained](https://img.shields.io/badge/Maintained-Yes-success?style=flat-square)")
-    lines.append("")
-    lines.append("> [!TIP]")
-    lines.append("> **Instant Full Quality**: Click any preview thumbnail below to view or download the uncompressed original wallpaper.")
-    lines.append("")
-    lines.append("---")
-    lines.append("")
-    lines.append("## 🧭 Quick Navigation")
-    lines.append("")
-    lines.append("| Category | Wallpapers | Color & Style Highlights |")
-    lines.append("| :--- | :---: | :--- |")
     
+    nav_links = []
     for cat_key, conf in CATEGORY_CONFIG.items():
         count = len(catalog.get(cat_key, []))
-        link = f"#{conf['title'].lower().replace(' ', '-').replace('&', '').replace('--', '-')}"
-        lines.append(f"| [{conf['emoji']} **{conf['title']}**]({link}) | `{count}` | {conf['description']} |")
+        link = f"#{conf['title'].lower()}"
+        nav_links.append(f"[{conf['title']}]({link}) ({count})")
     
+    lines.append(" • ".join(nav_links))
     lines.append("")
     lines.append("---")
     lines.append("")
@@ -233,10 +182,8 @@ def generate_markdown(repo_dir, catalog):
         if not items:
             continue
             
-        lines.append(f"## {conf['emoji']} {conf['title']}")
-        lines.append(f"*{conf['description']}* &nbsp;•&nbsp; **`{len(items)} wallpapers`**")
+        lines.append(f"## {conf['title']}")
         lines.append("")
-        
         lines.append("| Preview | Preview | Preview |")
         lines.append("| :---: | :---: | :---: |")
         
@@ -262,70 +209,58 @@ def generate_markdown(repo_dir, catalog):
             lines.append(f"| {row[0]} | {row[1]} | |")
             
         lines.append("")
-        lines.append("<p align=\"right\"><a href=\"#🖼️-curated-desktop-wallpapers\">⬆️ Back to Top</a></p>")
-        lines.append("")
         lines.append("---")
         lines.append("")
         
-    # Download & Hyprland Setup Guide
-    lines.append("## 🚀 Download & Setup Guide")
+    # Setup Guide
+    lines.append("## Setup Guide")
     lines.append("")
-    lines.append("### 1. Clone the Collection")
+    lines.append("### Clone")
     lines.append("```bash")
     lines.append("git clone git@github.com:Realdhiru/walpp.git ~/Pictures/Wallpapers")
     lines.append("```")
     lines.append("")
-    lines.append("### 2. Download Specific Shades (Sparse Checkout)")
+    lines.append("### Sparse Checkout")
     lines.append("```bash")
     lines.append("git clone --filter=blob:none --sparse git@github.com:Realdhiru/walpp.git ~/Pictures/Wallpapers")
     lines.append("cd ~/Pictures/Wallpapers")
-    lines.append("git sparse-checkout set dark blue   # only download dark and blue shades")
+    lines.append("git sparse-checkout set dark blue")
     lines.append("```")
     lines.append("")
-    lines.append("### 3. Setting Wallpapers on Linux & Hyprland")
+    lines.append("### Setting Wallpapers on Linux & Hyprland")
+    lines.append("* **swww**:")
+    lines.append("  ```bash")
+    lines.append("  swww img ~/Pictures/Wallpapers/blue/monterey-nord-dunes.png --transition-type wipe")
+    lines.append("  ```")
     lines.append("* **hyprpaper**:")
     lines.append("  ```ini")
     lines.append("  preload = ~/Pictures/Wallpapers/dark/pure-black-minimal.jpg")
     lines.append("  wallpaper = ,~/Pictures/Wallpapers/dark/pure-black-minimal.jpg")
     lines.append("  ```")
-    lines.append("* **swww** (smooth transitions):")
-    lines.append("  ```bash")
-    lines.append("  swww img ~/Pictures/Wallpapers/blue/monterey-nord-dunes.png --transition-type wipe")
-    lines.append("  ```")
-    lines.append("* **mpvpaper** (for live MP4 wallpapers):")
+    lines.append("* **mpvpaper** (videos):")
     lines.append("  ```bash")
     lines.append("  mpvpaper '*' ~/Pictures/Wallpapers/videos/cracked-screen-cat.mp4 -o 'loop --no-audio'")
-    lines.append("  ```")
-    lines.append("* **feh**:")
-    lines.append("  ```bash")
-    lines.append("  feh --bg-fill ~/Pictures/Wallpapers/dark/nixos-snowflake-minimal.png")
     lines.append("  ```")
     lines.append("")
     lines.append("---")
     lines.append("")
-    lines.append("## 🛠️ Automated Gallery Generator")
-    lines.append("")
-    lines.append("To regenerate WebP previews and update the README table when adding wallpapers:")
+    lines.append("## Gallery Generator")
     lines.append("")
     lines.append("```bash")
     lines.append("./scripts/update-gallery.sh")
-    lines.append("git add .")
-    lines.append("git commit -m \"Add wallpapers\"")
-    lines.append("git push")
     lines.append("```")
     lines.append("")
     lines.append("---")
     lines.append("")
-    lines.append("## 📜 License & Credits")
-    lines.append("- Wallpapers remain copyright of their respective digital artists, photographers, and studios.")
-    lines.append("- The repository structure, automation scripts, and gallery templates are licensed under the [MIT License](LICENSE).")
+    lines.append("## License")
+    lines.append("Wallpapers belong to their respective digital artists, photographers, and studios. Automation scripts and gallery templates are licensed under the [MIT License](LICENSE).")
     lines.append("")
     
     return "\n".join(lines)
 
 def main():
     repo_dir = sys.argv[1] if len(sys.argv) > 1 else os.getcwd()
-    print(f"📁 Scanning repository at: {repo_dir}")
+    print(f"Scanning repository at: {repo_dir}")
     
     catalog = {}
     total_scanned = 0
@@ -349,7 +284,7 @@ def main():
                 
         print(f"  • {cat_key}: {len(catalog[cat_key])} wallpapers processed")
         
-    print(f"✨ Total wallpapers processed: {total_scanned}")
+    print(f"Total wallpapers processed: {total_scanned}")
     
     # Generate README
     readme_content = generate_markdown(repo_dir, catalog)
@@ -357,7 +292,7 @@ def main():
     with open(readme_path, "w", encoding="utf-8") as f:
         f.write(readme_content)
         
-    print(f"📝 Successfully updated README.md at: {readme_path}")
+    print(f"Successfully updated README.md at: {readme_path}")
 
 if __name__ == "__main__":
     main()

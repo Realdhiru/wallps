@@ -13,32 +13,115 @@ import re
 import shutil
 import subprocess
 import colorsys
+import urllib.parse
 from collections import defaultdict
 from pathlib import Path
 
 REPO_DIR = Path(__file__).resolve().parent.parent
-VALID_EXTS = {".jpg", ".jpeg", ".png", ".gif", ".mp4"}
+VALID_EXTS = {".jpg", ".jpeg", ".png", ".gif", ".mp4", ".webp"}
 KNOWN_CATEGORIES = {"dark", "blue", "warm", "purple", "green", "light", "gifs", "videos"}
+
+SEARCH_MAP_PATHS = [
+    Path.home() / ".cache" / "quickshell" / "wallpaper_picker" / "search_map.txt",
+    Path(f"/run/user/{os.getuid()}/quickshell/wallpaper_picker/search_map.txt"),
+    Path("/tmp/quickshell/wallpaper_picker/search_map.txt"),
+]
+
+SEARCH_LOG_PATHS = [
+    Path(f"/run/user/{os.getuid()}/quickshell/logs/ddg_downloader.log"),
+    Path.home() / ".cache" / "quickshell" / "logs" / "ddg_downloader.log",
+]
+
+def clean_text_to_kebab(text):
+    if not text:
+        return ""
+    # Unquote URL encoding
+    text = urllib.parse.unquote(text)
+    # Remove file extensions if at the end
+    text = re.sub(r"\.(jpg|jpeg|png|gif|mp4|webp|webm)$", "", text, flags=re.IGNORECASE)
+    # Strip site prefixes specifically
+    text = re.sub(r"(?i)^(wallpaperflare\.com|wallhaven|deviantart|artstation)[_\-\.]+", "", text)
+    # Strip resolution tokens and generic web clutter
+    text = re.sub(r"(?i)\b(\d+k|uhd|fhd|1080p|1440p|2160p|ultra\s*hd)\b", " ", text)
+    text = re.sub(r"(?i)\b(free\s*download)\b", " ", text)
+    # Split camelCase / PascalCase
+    text = re.sub(r"([a-z0-9])([A-Z])", r"\1 \2", text)
+    # Lowercase
+    text = text.lower()
+    # Replace non-alphanumeric with dashes
+    text = re.sub(r"[^a-z0-9]+", "-", text)
+    # Collapse multiple dashes and strip
+    return re.sub(r"-+", "-", text).strip("-")
+
+def lookup_search_metadata(filename):
+    """Finds URL or search query for a ddg_ downloaded file."""
+    for map_path in SEARCH_MAP_PATHS:
+        if map_path.exists():
+            try:
+                for line in map_path.read_text(encoding="utf-8", errors="ignore").splitlines():
+                    if "|" in line:
+                        parts = line.split("|")
+                        if parts[0].strip() == filename:
+                            full_url = parts[1].strip() if len(parts) > 1 else ""
+                            title = parts[2].strip() if len(parts) > 2 else ""
+                            return full_url, title
+            except Exception:
+                pass
+
+    # If not found directly, check latest search query in logs
+    latest_query = ""
+    for log_path in SEARCH_LOG_PATHS:
+        if log_path.exists():
+            try:
+                for line in reversed(log_path.read_text(encoding="utf-8", errors="ignore").splitlines()):
+                    if "Starting search for:" in line:
+                        latest_query = line.split("Starting search for:")[-1].replace("===", "").strip()
+                        break
+                if latest_query:
+                    break
+            except Exception:
+                pass
+
+    return "", latest_query
 
 def sanitize_name(filename):
     stem = Path(filename).stem
     ext = Path(filename).suffix.lower()
     if ext == ".jpeg":
         ext = ".jpg"
-    elif ext == ".png":
-        ext = ".png"
 
-    # Remove ddg prefixes, url hashes, random junk
-    clean = stem
-    if clean.startswith("ddg_"):
-        clean = "wallpaper-" + clean[4:12]
+    clean = ""
 
-    # Convert to lowercase
-    clean = clean.lower()
-    # Replace non-alphanumeric (except dashes and dots) with dashes
-    clean = re.sub(r"[^a-z0-9\-\.]+", "-", clean)
-    # Collapse multiple dashes
-    clean = re.sub(r"-+", "-", clean).strip("-")
+    # If it is a DDG search download
+    if stem.startswith("ddg_"):
+        full_url, title = lookup_search_metadata(Path(filename).name)
+        # Try title first
+        if title:
+            cand = clean_text_to_kebab(title)
+            if cand and not cand.isdigit() and len(cand) >= 3:
+                clean = cand
+
+        # Try URL path basename next
+        if not clean and full_url:
+            parsed_path = urllib.parse.urlparse(full_url).path
+            url_stem = Path(parsed_path).stem
+            cand = clean_text_to_kebab(url_stem)
+            if cand and not cand.isdigit() and len(cand) >= 3:
+                clean = cand
+
+        # Try query fallback
+        if not clean and title:
+            cand = clean_text_to_kebab(title)
+            if cand:
+                clean = cand
+
+        # Last resort: use a short slice of the uuid
+        if not clean:
+            clean = "wallpaper-" + stem[4:12]
+    else:
+        # Manual filename sanitization
+        clean = clean_text_to_kebab(stem)
+
     if not clean:
         clean = "wallpaper"
 
@@ -95,9 +178,22 @@ def classify_static(filepath):
         return max(hue_weights.items(), key=lambda x: x[1])[0]
     return "dark"
 
-def notify(title, message):
-    # Desktop notifications disabled by user preference
-    pass
+def update_active_wallpaper_references(old_path, new_path):
+    current_txt = Path.home() / ".cache" / "current_wallpaper.txt"
+    last_txt = Path.home() / ".cache" / "last_wallpaper.txt"
+    for txt in (current_txt, last_txt):
+        try:
+            if txt.exists() and txt.read_text().strip() == str(old_path.resolve()):
+                txt.write_text(str(new_path.resolve()) + "\n")
+        except Exception:
+            pass
+
+    try:
+        thumb_sh = Path.home() / ".config" / "hypr" / "scripts" / "wallpaper_thumbnail.sh"
+        if thumb_sh.exists():
+            subprocess.Popen([str(thumb_sh)])
+    except Exception:
+        pass
 
 def process_file(filepath):
     path = Path(filepath).resolve()
@@ -108,15 +204,33 @@ def process_file(filepath):
     if ext not in VALID_EXTS:
         return None
 
-    rel_to_repo = path.relative_to(REPO_DIR)
+    try:
+        rel_to_repo = path.relative_to(REPO_DIR)
+    except ValueError:
+        return None
+
     parts = rel_to_repo.parts
 
-    # If it's already inside a category folder and properly named
+    # Case 1: File is placed inside a known category folder
     if len(parts) == 2 and parts[0] in KNOWN_CATEGORIES:
         category = parts[0]
-        dest_path = path
+        cat_dir = REPO_DIR / category
+        clean_name = sanitize_name(path.name)
+        dest_path = cat_dir / clean_name
+
+        if dest_path != path:
+            counter = 1
+            stem = dest_path.stem
+            final_ext = dest_path.suffix
+            while dest_path.exists() and dest_path != path:
+                dest_path = cat_dir / f"{stem}-{counter}{final_ext}"
+                counter += 1
+
+            shutil.move(str(path), str(dest_path))
+            print(f"Renamed in {category}: {path.name} -> {dest_path.name}")
+            update_active_wallpaper_references(path, dest_path)
+    # Case 2: File is dropped in repository root or needs categorization
     else:
-        # Determine category and clean name
         clean_name = sanitize_name(path.name)
         if ext == ".gif":
             category = "gifs"
@@ -129,34 +243,19 @@ def process_file(filepath):
         cat_dir.mkdir(exist_ok=True)
         dest_path = cat_dir / clean_name
 
-        # Ensure no name collision
         counter = 1
         stem = dest_path.stem
+        final_ext = dest_path.suffix
         while dest_path.exists() and dest_path != path:
-            dest_path = cat_dir / f"{stem}-{counter}{ext}"
+            dest_path = cat_dir / f"{stem}-{counter}{final_ext}"
             counter += 1
 
         shutil.move(str(path), str(dest_path))
-        print(f"📦 Auto-moved: {path.name} -> {category}/{dest_path.name}")
-
-        # Update current and last wallpaper references if the active wallpaper was moved
-        current_txt = Path.home() / ".cache" / "current_wallpaper.txt"
-        last_txt = Path.home() / ".cache" / "last_wallpaper.txt"
-        for txt in (current_txt, last_txt):
-            try:
-                if txt.exists() and txt.read_text().strip() == str(path.resolve()):
-                    txt.write_text(str(dest_path.resolve()) + "\n")
-            except Exception:
-                pass
-
-        # Trigger desktop wallpaper thumbnail indexing
-        try:
-            subprocess.Popen([str(Path.home() / ".config" / "hypr" / "scripts" / "wallpaper_thumbnail.sh")])
-        except Exception:
-            pass
+        print(f"Auto-moved: {path.name} -> {category}/{dest_path.name}")
+        update_active_wallpaper_references(path, dest_path)
 
     # Regenerate gallery and preview
-    print("🎨 Updating previews and README...")
+    print("Updating previews and README...")
     subprocess.run(["python3", str(REPO_DIR / "scripts" / "generate_gallery.py"), str(REPO_DIR)],
                    check=True)
 
@@ -166,15 +265,14 @@ def process_file(filepath):
         commit_msg = f"Auto-add wallpaper: {dest_path.name} ({category})"
         subprocess.run(["git", "commit", "-m", commit_msg], cwd=REPO_DIR, check=True)
         subprocess.Popen(["git", "push", "origin", "main"], cwd=REPO_DIR)
-        print("🚀 Auto-pushed changes to GitHub in background.")
+        print("Auto-pushed changes to GitHub in background.")
     except subprocess.CalledProcessError:
         pass
 
-    notify("🖼️ Wallpaper Added", f"Organized into {category}/{dest_path.name}")
     return dest_path
 
 def scan_root_inbox():
-    # Scan root of REPO_DIR for any loose wallpapers
+    # Scan root of REPO_DIR for loose wallpapers
     for entry in os.listdir(REPO_DIR):
         p = REPO_DIR / entry
         if p.is_file() and p.suffix.lower() in VALID_EXTS:
