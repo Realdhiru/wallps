@@ -2,7 +2,7 @@
 
 Curated desktop wallpapers organized by shade and media format.
 
-[Dark](#dark) (49) • [Blue](#blue) (61) • [Warm](#warm) (34) • [Purple](#purple) (9) • [Green](#green) (10) • [Light](#light) (7) • [GIFs](#gifs) (55) • [Videos](#videos) (5)
+[Dark](#dark) (50) • [Blue](#blue) (61) • [Warm](#warm) (34) • [Purple](#purple) (9) • [Green](#green) (10) • [Light](#light) (7) • [GIFs](#gifs) (55) • [Videos](#videos) (5)
 
 ---
 
@@ -26,7 +26,7 @@ Curated desktop wallpapers organized by shade and media format.
 | <a href="dark/rocket-launch-smoke-plume.jpg"><img src="previews/dark/rocket-launch-smoke-plume.jpg.webp" width="240" alt="Rocket Launch Smoke Plume" /></a><br /><sub>**Rocket Launch Smoke Plume**<br />`4K UHD` • `16:9` • `270 KB`</sub> | <a href="dark/samurai-lady-portrait.png"><img src="previews/dark/samurai-lady-portrait.png.webp" width="240" alt="Samurai Lady Portrait" /></a><br /><sub>**Samurai Lady Portrait**<br />`1080p` • `16:9` • `160 KB`</sub> | <a href="dark/shadow-colossus-horseman.png"><img src="previews/dark/shadow-colossus-horseman.png.webp" width="240" alt="Shadow Colossus Horseman" /></a><br /><sub>**Shadow Colossus Horseman**<br />`1080p` • `16:9` • `590 KB`</sub> |
 | <a href="dark/spiderman-black-suit-crouch.jpg"><img src="previews/dark/spiderman-black-suit-crouch.jpg.webp" width="240" alt="Spiderman Black Suit Crouch" /></a><br /><sub>**Spiderman Black Suit Crouch**<br />`4K UHD` • `16:9` • `1.0 MB`</sub> | <a href="dark/starlit-night-sky.jpg"><img src="previews/dark/starlit-night-sky.jpg.webp" width="240" alt="Starlit Night Sky" /></a><br /><sub>**Starlit Night Sky**<br />`1080p` • `16:10` • `171 KB`</sub> | <a href="dark/tokyo-lantern-night-street.jpg"><img src="previews/dark/tokyo-lantern-night-street.jpg.webp" width="240" alt="Tokyo Lantern Night Street" /></a><br /><sub>**Tokyo Lantern Night Street**<br />`1080p` • `16:9` • `241 KB`</sub> |
 | <a href="dark/tokyo-neon-pink-alley.png"><img src="previews/dark/tokyo-neon-pink-alley.png.webp" width="240" alt="Tokyo Neon Pink Alley" /></a><br /><sub>**Tokyo Neon Pink Alley**<br />`5K` • `16:9` • `1015 KB`</sub> | <a href="dark/wanderer-explore-mountains.jpg"><img src="previews/dark/wanderer-explore-mountains.jpg.webp" width="240" alt="Wanderer Explore Mountains" /></a><br /><sub>**Wanderer Explore Mountains**<br />`1080p` • `16:9` • `291 KB`</sub> | <a href="dark/windows-11-bloom-dark.jpg"><img src="previews/dark/windows-11-bloom-dark.jpg.webp" width="240" alt="Windows 11 Bloom Dark" /></a><br /><sub>**Windows 11 Bloom Dark**<br />`4K UHD` • `16:9` • `215 KB`</sub> |
-| <a href="dark/windows-bloom-dark.jpg"><img src="previews/dark/windows-bloom-dark.jpg.webp" width="240" alt="Windows Bloom Dark" /></a><br /><sub>**Windows Bloom Dark**<br />`4K UHD` • `16:10` • `418 KB`</sub> | | |
+| <a href="dark/windows-bloom-dark.jpg"><img src="previews/dark/windows-bloom-dark.jpg.webp" width="240" alt="Windows Bloom Dark" /></a><br /><sub>**Windows Bloom Dark**<br />`4K UHD` • `16:10` • `418 KB`</sub> | <a href="dark/wp14118497.jpg"><img src="previews/dark/wp14118497.jpg.webp" width="240" alt="Wp14118497" /></a><br /><sub>**Wp14118497**<br />`1440p` • `16:10` • `143 KB`</sub> | |
 
 ---
 
