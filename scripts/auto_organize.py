@@ -96,11 +96,8 @@ def classify_static(filepath):
     return "dark"
 
 def notify(title, message):
-    try:
-        subprocess.run(["notify-send", "-a", "Wallpaper Manager", title, message],
-                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-    except Exception:
-        pass
+    # Desktop notifications disabled by user preference
+    pass
 
 def process_file(filepath):
     path = Path(filepath).resolve()
