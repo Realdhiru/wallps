@@ -156,7 +156,7 @@ mpvpaper '*' ~/Pictures/Wallpapers/videos/cracked-screen-cat.mp4 -o 'loop --no-a
 To download only specific categories without fetching the entire repository:
 
 ```bash
-git clone --filter=blob:none --sparse git@github.com:Realdhiru/walpp.git ~/Pictures/Wallpapers
+git clone --filter=blob:none --sparse git@github.com:Realdhiru/wallps.git ~/Pictures/Wallpapers
 cd ~/Pictures/Wallpapers
 git sparse-checkout set dark blue   # only checkout dark and blue folders
 ```

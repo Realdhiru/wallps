@@ -148,12 +148,12 @@ Curated desktop wallpapers organized by shade and media format.
 
 ### Clone
 ```bash
-git clone git@github.com:Realdhiru/walpp.git ~/Pictures/Wallpapers
+git clone git@github.com:Realdhiru/wallps.git ~/Pictures/Wallpapers
 ```
 
 ### Sparse Checkout
 ```bash
-git clone --filter=blob:none --sparse git@github.com:Realdhiru/walpp.git ~/Pictures/Wallpapers
+git clone --filter=blob:none --sparse git@github.com:Realdhiru/wallps.git ~/Pictures/Wallpapers
 cd ~/Pictures/Wallpapers
 git sparse-checkout set dark blue
 ```
