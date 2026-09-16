@@ -2,8 +2,8 @@
 
 A curated collection of Ultra-HD (4K / 5K / 8K), animated pixel art, and live desktop wallpapers organized by color shade and media format.
 
-![Wallpapers](https://img.shields.io/badge/Wallpapers-225-blue?style=flat-square&logo=images)
-![Total Size](https://img.shields.io/badge/Total%20Size-713.6%20MB-informational?style=flat-square)
+![Wallpapers](https://img.shields.io/badge/Wallpapers-226-blue?style=flat-square&logo=images)
+![Total Size](https://img.shields.io/badge/Total%20Size-714.1%20MB-informational?style=flat-square)
 ![Resolution](https://img.shields.io/badge/Resolution-1080p%20|%204K%20|%205K%20|%208K-blueviolet?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT%20/%20Personal-green?style=flat-square)
 ![Maintained](https://img.shields.io/badge/Maintained-Yes-success?style=flat-square)
@@ -23,7 +23,7 @@ A curated collection of Ultra-HD (4K / 5K / 8K), animated pixel art, and live de
 | [🔮 **Purple & Neon**](#purple-neon) | `10` | Synthwave purples, violet twilight vistas, and electric magenta accents. |
 | [🍃 **Verdant & Green**](#verdant-green) | `10` | Lush alpine meadows, mossy waterfalls, rolling hills, and pastoral serenity. |
 | [☀️ **Light & Minimal**](#light-minimal) | `7` | Clean high-key compositions, delicate watercolor, zen ink, and airy aesthetics. |
-| [👾 **Animated GIFs**](#animated-gifs) | `49` | Nostalgic pixel art scenes, 16-bit animations, and relaxing lofi loops. |
+| [👾 **Animated GIFs**](#animated-gifs) | `50` | Nostalgic pixel art scenes, 16-bit animations, and relaxing lofi loops. |
 | [🎬 **Live Wallpapers**](#live-wallpapers) | `5` | Ultra-HD MP4 live video wallpapers suitable for mpvpaper, swww, or awallpaper. |
 
 ---
@@ -148,7 +148,7 @@ A curated collection of Ultra-HD (4K / 5K / 8K), animated pixel art, and live de
 ---
 
 ## 👾 Animated GIFs
-*Nostalgic pixel art scenes, 16-bit animations, and relaxing lofi loops.* &nbsp;•&nbsp; **`49 wallpapers`**
+*Nostalgic pixel art scenes, 16-bit animations, and relaxing lofi loops.* &nbsp;•&nbsp; **`50 wallpapers`**
 
 | Preview | Preview | Preview |
 | :---: | :---: | :---: |
@@ -167,8 +167,8 @@ A curated collection of Ultra-HD (4K / 5K / 8K), animated pixel art, and live de
 | <a href="gifs/pixel-rainy-coffee-shop.gif"><img src="previews/gifs/pixel-rainy-coffee-shop.gif.webp" width="240" alt="Pixel Rainy Coffee Shop" /></a><br /><sub>**Pixel Rainy Coffee Shop**<br />`1080p • Animated` • `16:9` • `2.1 MB`</sub> | <a href="gifs/pixel-subway-car-sunset.gif"><img src="previews/gifs/pixel-subway-car-sunset.gif.webp" width="240" alt="Pixel Subway Car Sunset" /></a><br /><sub>**Pixel Subway Car Sunset**<br />`1080p • Animated` • `16:9` • `2.0 MB`</sub> | <a href="gifs/pixel-tokyo-commuter-train.gif"><img src="previews/gifs/pixel-tokyo-commuter-train.gif.webp" width="240" alt="Pixel Tokyo Commuter Train" /></a><br /><sub>**Pixel Tokyo Commuter Train**<br />`1080p • Animated` • `25:12` • `817 KB`</sub> |
 | <a href="gifs/pixel-tokyo-night-street.gif"><img src="previews/gifs/pixel-tokyo-night-street.gif.webp" width="240" alt="Pixel Tokyo Night Street" /></a><br /><sub>**Pixel Tokyo Night Street**<br />`1080p • Animated` • `16:9` • `1.1 MB`</sub> | <a href="gifs/pixel-train-window-clouds.gif"><img src="previews/gifs/pixel-train-window-clouds.gif.webp" width="240" alt="Pixel Train Window Clouds" /></a><br /><sub>**Pixel Train Window Clouds**<br />`1080p • Animated` • `16:9` • `173 KB`</sub> | <a href="gifs/pixilart-starting-soon.gif"><img src="previews/gifs/pixilart-starting-soon.gif.webp" width="240" alt="Pixilart Starting Soon" /></a><br /><sub>**Pixilart Starting Soon**<br />`1400x788 • Animated` • `16:9` • `1.5 MB`</sub> |
 | <a href="gifs/relaxing-room-by-1tzah.gif"><img src="previews/gifs/relaxing-room-by-1tzah.gif.webp" width="240" alt="Relaxing Room By 1Tzah" /></a><br /><sub>**Relaxing Room By 1Tzah**<br />`1080p • Animated` • `16:9` • `465 KB`</sub> | <a href="gifs/sakamoto-days-anime.gif"><img src="previews/gifs/sakamoto-days-anime.gif.webp" width="240" alt="Sakamoto Days Anime" /></a><br /><sub>**Sakamoto Days Anime**<br />`800x450 • Animated` • `16:9` • `10.5 MB`</sub> | <a href="gifs/tatiana-pixel-bedroom.gif"><img src="previews/gifs/tatiana-pixel-bedroom.gif.webp" width="240" alt="Tatiana Pixel Bedroom" /></a><br /><sub>**Tatiana Pixel Bedroom**<br />`1800x600 • Animated` • `3:1` • `674 KB`</sub> |
-| <a href="gifs/wallpaper-17895523-1.gif"><img src="previews/gifs/wallpaper-17895523-1.gif.webp" width="240" alt="Wallpaper 17895523 1" /></a><br /><sub>**Wallpaper 17895523 1**<br />`1080p • Animated` • `13:7` • `379 KB`</sub> | <a href="gifs/wallpaper-17895523.gif"><img src="previews/gifs/wallpaper-17895523.gif.webp" width="240" alt="Wallpaper 17895523" /></a><br /><sub>**Wallpaper 17895523**<br />`1080p • Animated` • `14:9` • `513 KB`</sub> | <a href="gifs/waneella-japanese-train.gif"><img src="previews/gifs/waneella-japanese-train.gif.webp" width="240" alt="Waneella Japanese Train" /></a><br /><sub>**Waneella Japanese Train**<br />`1280x720 • Animated` • `16:9` • `484 KB`</sub> |
-| <a href="gifs/waneella-monster-alley.gif"><img src="previews/gifs/waneella-monster-alley.gif.webp" width="240" alt="Waneella Monster Alley" /></a><br /><sub>**Waneella Monster Alley**<br />`960x540 • Animated` • `16:9` • `1.7 MB`</sub> | | |
+| <a href="gifs/wallpaper-17895523-1.gif"><img src="previews/gifs/wallpaper-17895523-1.gif.webp" width="240" alt="Wallpaper 17895523 1" /></a><br /><sub>**Wallpaper 17895523 1**<br />`1080p • Animated` • `13:7` • `379 KB`</sub> | <a href="gifs/wallpaper-17895523-2.gif"><img src="previews/gifs/wallpaper-17895523-2.gif.webp" width="240" alt="Wallpaper 17895523 2" /></a><br /><sub>**Wallpaper 17895523 2**<br />`1080p • Animated` • `12:7` • `498 KB`</sub> | <a href="gifs/wallpaper-17895523.gif"><img src="previews/gifs/wallpaper-17895523.gif.webp" width="240" alt="Wallpaper 17895523" /></a><br /><sub>**Wallpaper 17895523**<br />`1080p • Animated` • `14:9` • `513 KB`</sub> |
+| <a href="gifs/waneella-japanese-train.gif"><img src="previews/gifs/waneella-japanese-train.gif.webp" width="240" alt="Waneella Japanese Train" /></a><br /><sub>**Waneella Japanese Train**<br />`1280x720 • Animated` • `16:9` • `484 KB`</sub> | <a href="gifs/waneella-monster-alley.gif"><img src="previews/gifs/waneella-monster-alley.gif.webp" width="240" alt="Waneella Monster Alley" /></a><br /><sub>**Waneella Monster Alley**<br />`960x540 • Animated` • `16:9` • `1.7 MB`</sub> | |
 
 <p align="right"><a href="#🖼️-curated-desktop-wallpapers">⬆️ Back to Top</a></p>
 
