@@ -2,8 +2,8 @@
 
 A curated collection of Ultra-HD (4K / 5K / 8K), animated pixel art, and live desktop wallpapers organized by color shade and media format.
 
-![Wallpapers](https://img.shields.io/badge/Wallpapers-226-blue?style=flat-square&logo=images)
-![Total Size](https://img.shields.io/badge/Total%20Size-714.1%20MB-informational?style=flat-square)
+![Wallpapers](https://img.shields.io/badge/Wallpapers-227-blue?style=flat-square&logo=images)
+![Total Size](https://img.shields.io/badge/Total%20Size-714.2%20MB-informational?style=flat-square)
 ![Resolution](https://img.shields.io/badge/Resolution-1080p%20|%204K%20|%205K%20|%208K-blueviolet?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT%20/%20Personal-green?style=flat-square)
 ![Maintained](https://img.shields.io/badge/Maintained-Yes-success?style=flat-square)
@@ -18,7 +18,7 @@ A curated collection of Ultra-HD (4K / 5K / 8K), animated pixel art, and live de
 | Category | Wallpapers | Color & Style Highlights |
 | :--- | :---: | :--- |
 | [🌑 **Dark & Obsidian**](#dark-obsidian) | `48` | Deep blacks, OLED-friendly dark tones, cyber-noir, and midnight aesthetics. |
-| [🌊 **Oceanic & Blue**](#oceanic-blue) | `60` | Calming azure, arctic Nord hues, alpine lakes, twilight skies, and cyan neon. |
+| [🌊 **Oceanic & Blue**](#oceanic-blue) | `61` | Calming azure, arctic Nord hues, alpine lakes, twilight skies, and cyan neon. |
 | [🔥 **Warm & Amber**](#warm-amber) | `36` | Fiery sunsets, autumn foliage, crimson anime scenes, and cozy amber glows. |
 | [🔮 **Purple & Neon**](#purple-neon) | `10` | Synthwave purples, violet twilight vistas, and electric magenta accents. |
 | [🍃 **Verdant & Green**](#verdant-green) | `10` | Lush alpine meadows, mossy waterfalls, rolling hills, and pastoral serenity. |
@@ -55,7 +55,7 @@ A curated collection of Ultra-HD (4K / 5K / 8K), animated pixel art, and live de
 ---
 
 ## 🌊 Oceanic & Blue
-*Calming azure, arctic Nord hues, alpine lakes, twilight skies, and cyan neon.* &nbsp;•&nbsp; **`60 wallpapers`**
+*Calming azure, arctic Nord hues, alpine lakes, twilight skies, and cyan neon.* &nbsp;•&nbsp; **`61 wallpapers`**
 
 | Preview | Preview | Preview |
 | :---: | :---: | :---: |
@@ -78,7 +78,8 @@ A curated collection of Ultra-HD (4K / 5K / 8K), animated pixel art, and live de
 | <a href="blue/samurai-strike-ink.jpg"><img src="previews/blue/samurai-strike-ink.jpg.webp" width="240" alt="Samurai Strike Ink" /></a><br /><sub>**Samurai Strike Ink**<br />`5K` • `16:9` • `1.7 MB`</sub> | <a href="blue/serial-experiments-lain.png"><img src="previews/blue/serial-experiments-lain.png.webp" width="240" alt="Serial Experiments Lain" /></a><br /><sub>**Serial Experiments Lain**<br />`1080p` • `16:9` • `2.2 MB`</sub> | <a href="blue/snow-covered-pine-woods.png"><img src="previews/blue/snow-covered-pine-woods.png.webp" width="240" alt="Snow Covered Pine Woods" /></a><br /><sub>**Snow Covered Pine Woods**<br />`1440p` • `29:12` • `4.4 MB`</sub> |
 | <a href="blue/snowy-cabin-winter-night.png"><img src="previews/blue/snowy-cabin-winter-night.png.webp" width="240" alt="Snowy Cabin Winter Night" /></a><br /><sub>**Snowy Cabin Winter Night**<br />`1440p` • `16:9` • `4.1 MB`</sub> | <a href="blue/snowy-mountain-peaks.jpg"><img src="previews/blue/snowy-mountain-peaks.jpg.webp" width="240" alt="Snowy Mountain Peaks" /></a><br /><sub>**Snowy Mountain Peaks**<br />`5K` • `3:2` • `5.9 MB`</sub> | <a href="blue/solitary-cloud-blue-sky.jpg"><img src="previews/blue/solitary-cloud-blue-sky.jpg.webp" width="240" alt="Solitary Cloud Blue Sky" /></a><br /><sub>**Solitary Cloud Blue Sky**<br />`1440p` • `16:10` • `165 KB`</sub> |
 | <a href="blue/torii-gate-island-shrine.jpg"><img src="previews/blue/torii-gate-island-shrine.jpg.webp" width="240" alt="Torii Gate Island Shrine" /></a><br /><sub>**Torii Gate Island Shrine**<br />`1080p` • `16:10` • `1.2 MB`</sub> | <a href="blue/wallpaper-17895419.jpg"><img src="previews/blue/wallpaper-17895419.jpg.webp" width="240" alt="Wallpaper 17895419" /></a><br /><sub>**Wallpaper 17895419**<br />`1080p` • `16:9` • `235 KB`</sub> | <a href="blue/wallpaper-17895523.jpg"><img src="previews/blue/wallpaper-17895523.jpg.webp" width="240" alt="Wallpaper 17895523" /></a><br /><sub>**Wallpaper 17895523**<br />`1440p` • `16:9` • `508 KB`</sub> |
-| <a href="blue/waves-waviness-pattern.jpg"><img src="previews/blue/waves-waviness-pattern.jpg.webp" width="240" alt="Waves Waviness Pattern" /></a><br /><sub>**Waves Waviness Pattern**<br />`4K UHD` • `16:9` • `3.3 MB`</sub> | <a href="blue/winding-coastal-road.jpg"><img src="previews/blue/winding-coastal-road.jpg.webp" width="240" alt="Winding Coastal Road" /></a><br /><sub>**Winding Coastal Road**<br />`1440p` • `2:1` • `1.6 MB`</sub> | <a href="blue/zelda-guardian-shrine.png"><img src="previews/blue/zelda-guardian-shrine.png.webp" width="240" alt="Zelda Guardian Shrine" /></a><br /><sub>**Zelda Guardian Shrine**<br />`5K` • `16:9` • `1.1 MB`</sub> |
+| <a href="blue/wallpaper-17895524.png"><img src="previews/blue/wallpaper-17895524.png.webp" width="240" alt="Wallpaper 17895524" /></a><br /><sub>**Wallpaper 17895524**<br />`1080p` • `16:9` • `81 KB`</sub> | <a href="blue/waves-waviness-pattern.jpg"><img src="previews/blue/waves-waviness-pattern.jpg.webp" width="240" alt="Waves Waviness Pattern" /></a><br /><sub>**Waves Waviness Pattern**<br />`4K UHD` • `16:9` • `3.3 MB`</sub> | <a href="blue/winding-coastal-road.jpg"><img src="previews/blue/winding-coastal-road.jpg.webp" width="240" alt="Winding Coastal Road" /></a><br /><sub>**Winding Coastal Road**<br />`1440p` • `2:1` • `1.6 MB`</sub> |
+| <a href="blue/zelda-guardian-shrine.png"><img src="previews/blue/zelda-guardian-shrine.png.webp" width="240" alt="Zelda Guardian Shrine" /></a><br /><sub>**Zelda Guardian Shrine**<br />`5K` • `16:9` • `1.1 MB`</sub> | | |
 
 <p align="right"><a href="#🖼️-curated-desktop-wallpapers">⬆️ Back to Top</a></p>
 
