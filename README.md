@@ -2,7 +2,7 @@
 
 Curated desktop wallpapers organized by shade and media format.
 
-[Dark](#dark) (50) • [Blue](#blue) (63) • [Warm](#warm) (36) • [Purple](#purple) (10) • [Green](#green) (11) • [Light](#light) (7) • [GIFs](#gifs) (55) • [Videos](#videos) (5)
+[Dark](#dark) (50) • [Blue](#blue) (63) • [Warm](#warm) (36) • [Purple](#purple) (10) • [Green](#green) (10) • [Light](#light) (7) • [GIFs](#gifs) (55) • [Videos](#videos) (5)
 
 ---
 
@@ -95,7 +95,7 @@ Curated desktop wallpapers organized by shade and media format.
 | <a href="green/cat-coffee-cozy.jpg"><img src="previews/green/cat-coffee-cozy.jpg.webp" width="240" alt="Cat Coffee Cozy" /></a><br /><sub>**Cat Coffee Cozy**<br />`4K UHD` • `16:9` • `1.8 MB`</sub> | <a href="green/desert-oasis-night.jpg"><img src="previews/green/desert-oasis-night.jpg.webp" width="240" alt="Desert Oasis Night" /></a><br /><sub>**Desert Oasis Night**<br />`1080p` • `16:9` • `834 KB`</sub> | <a href="green/green-house-countryside.png"><img src="previews/green/green-house-countryside.png.webp" width="240" alt="Green House Countryside" /></a><br /><sub>**Green House Countryside**<br />`4K UHD` • `16:9` • `9.9 MB`</sub> |
 | <a href="green/lone-tree-field.png"><img src="previews/green/lone-tree-field.png.webp" width="240" alt="Lone Tree Field" /></a><br /><sub>**Lone Tree Field**<br />`5K` • `11:8` • `126 KB`</sub> | <a href="green/minimal-anime-portrait.png"><img src="previews/green/minimal-anime-portrait.png.webp" width="240" alt="Minimal Anime Portrait" /></a><br /><sub>**Minimal Anime Portrait**<br />`5K` • `16:9` • `12.0 MB`</sub> | <a href="green/minimal-green-hills-windmill.jpg"><img src="previews/green/minimal-green-hills-windmill.jpg.webp" width="240" alt="Minimal Green Hills Windmill" /></a><br /><sub>**Minimal Green Hills Windmill**<br />`4K UHD` • `16:9` • `148 KB`</sub> |
 | <a href="green/misty-pine-mountains.jpg"><img src="previews/green/misty-pine-mountains.jpg.webp" width="240" alt="Misty Pine Mountains" /></a><br /><sub>**Misty Pine Mountains**<br />`5K` • `3:2` • `3.5 MB`</sub> | <a href="green/mossy-forest-waterfall.jpg"><img src="previews/green/mossy-forest-waterfall.jpg.webp" width="240" alt="Mossy Forest Waterfall" /></a><br /><sub>**Mossy Forest Waterfall**<br />`5K` • `3:2` • `4.6 MB`</sub> | <a href="green/pixel-alpine-meadow-mountains.jpg"><img src="previews/green/pixel-alpine-meadow-mountains.jpg.webp" width="240" alt="Pixel Alpine Meadow Mountains" /></a><br /><sub>**Pixel Alpine Meadow Mountains**<br />`4K UHD` • `16:9` • `1.3 MB`</sub> |
-| <a href="green/solitary-scifi-robot.png"><img src="previews/green/solitary-scifi-robot.png.webp" width="240" alt="Solitary Scifi Robot" /></a><br /><sub>**Solitary Scifi Robot**<br />`1440p` • `4:3` • `82 KB`</sub> | <a href="green/sunlight-filters-through-lush-green-forest-canopy-generated-by-ai-free-photo.jpg"><img src="previews/green/sunlight-filters-through-lush-green-forest-canopy-generated-by-ai-free-photo.jpg.webp" width="240" alt="Sunlight Filters Through Lus…" /></a><br /><sub>**Sunlight Filters Through Lus…**<br />`1440p` • `16:9` • `871 KB`</sub> | |
+| <a href="green/solitary-scifi-robot.png"><img src="previews/green/solitary-scifi-robot.png.webp" width="240" alt="Solitary Scifi Robot" /></a><br /><sub>**Solitary Scifi Robot**<br />`1440p` • `4:3` • `82 KB`</sub> | | |
 
 ---
 
