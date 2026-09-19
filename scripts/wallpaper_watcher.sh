@@ -33,7 +33,7 @@ inotifywait -m -r -q \
     EXT="${FILE_PATH##*.}"
     EXT_LOWER="$(echo "$EXT" | tr '[:upper:]' '[:lower:]')"
     case "$EXT_LOWER" in
-        jpg|jpeg|png|gif|mp4)
+        jpg|jpeg|png|gif|mp4|webp)
             if [[ "$EVENT" =~ "DELETE" || "$EVENT" =~ "MOVED_FROM" ]]; then
                 echo "🗑️ Wallpaper deleted: $FILE_PATH"
                 python3 "$SCRIPT_DIR/auto_organize.py" --delete "$FILE_PATH" || true

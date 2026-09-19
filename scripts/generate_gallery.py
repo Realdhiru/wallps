@@ -15,9 +15,9 @@ from fractions import Fraction
 from pathlib import Path
 
 CATEGORY_CONFIG = {
-    "dark": {"title": "Dark"},
-    "blue": {"title": "Blue"},
     "warm": {"title": "Warm"},
+    "blue": {"title": "Blue"},
+    "dark": {"title": "Dark"},
     "purple": {"title": "Purple"},
     "green": {"title": "Green"},
     "light": {"title": "Light"},

@@ -22,6 +22,16 @@ REPO_DIR = Path(__file__).resolve().parent.parent
 VALID_EXTS = {".jpg", ".jpeg", ".png", ".gif", ".mp4", ".webp"}
 KNOWN_CATEGORIES = {"dark", "blue", "warm", "purple", "green", "light", "gifs", "videos"}
 
+def notify_desktop(title, body, icon="preferences-desktop-wallpaper"):
+    """Send a desktop notification via notify-send (non-blocking, best-effort)."""
+    try:
+        subprocess.Popen(
+            ["notify-send", "-a", "Wallpaper Organizer", "-i", icon, title, body],
+            stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL
+        )
+    except FileNotFoundError:
+        pass
+
 PICKER_ACTIVE_PATHS = [
     Path(f"/run/user/{os.getuid()}/quickshell/wallpaper_picker/picker_active"),
     Path("/tmp/quickshell/wallpaper_picker/picker_active"),
@@ -268,6 +278,7 @@ def process_file(filepath, force=False):
         shutil.move(str(path), str(dest_path))
         print(f"Auto-moved: {path.name} -> {category}/{dest_path.name}")
         update_active_wallpaper_references(path, dest_path)
+        notify_desktop("Wallpaper Added", f"{dest_path.name}\n→ {category}/")
 
     # Regenerate gallery and preview
     print("Updating previews and README...")
@@ -337,6 +348,8 @@ def handle_delete(filepath):
         except subprocess.CalledProcessError as e:
             print(f"Git commit error: {e}")
 
+        notify_desktop("Wallpaper Deleted", f"{filename} removed from {category}/", icon="user-trash")
+
 def scan_root_inbox(force=False):
     # Scan root of REPO_DIR for loose wallpapers
     for entry in os.listdir(REPO_DIR):
@@ -351,6 +364,19 @@ if __name__ == "__main__":
         elif sys.argv[1] == "--sync":
             scan_root_inbox(force=True)
             subprocess.run(["python3", str(REPO_DIR / "scripts" / "generate_gallery.py"), str(REPO_DIR)], check=True)
+            # Auto git commit & push after full sync
+            try:
+                subprocess.run(["git", "add", "-A"], cwd=REPO_DIR, check=True)
+                diff_check = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=REPO_DIR)
+                if diff_check.returncode != 0:
+                    subprocess.run(["git", "commit", "-m", "Sync: reorganize wallpapers & update gallery"], cwd=REPO_DIR, check=True)
+                    subprocess.Popen(["git", "push", "origin", "main"], cwd=REPO_DIR)
+                    print("Auto-committed and pushed sync changes.")
+                    notify_desktop("Wallpaper Sync", "Gallery synced and pushed to GitHub.")
+                else:
+                    print("No changes to commit after sync.")
+            except subprocess.CalledProcessError as e:
+                print(f"Git sync error: {e}")
         elif sys.argv[1] in ("--force", "--now"):
             scan_root_inbox(force=True)
         else:
