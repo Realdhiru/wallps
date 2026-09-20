@@ -18,9 +18,6 @@ An automated, curated desktop wallpaper repository paired with a zero-touch inge
 
 ```text
 walpp/
-├── .github/
-│   └── workflows/
-│       └── update-gallery.yml      # CI workflow for cloud preview generation
 ├── scripts/
 │   ├── auto_organize.py            # Automated ingestion, classification & sync
 │   ├── generate_gallery.py         # WebP preview generator & README table builder
@@ -28,13 +25,13 @@ walpp/
 │   ├── wallpaper_watcher.sh        # inotifywait event daemon
 │   └── wallpaper-watcher.service   # Systemd user service unit definition
 ├── previews/                       # Generated WebP thumbnails (mirrors category structure)
-├── dark/                           # Low-luminance, OLED black, cyber-noir, midnight
+├── gifs/                           # Animated pixel art, lofi chill loops, 16-bit retro
 ├── blue/                           # Azure, arctic Nord, cyan, alpine lakes, clear skies
+├── dark/                           # Low-luminance, OLED black, cyber-noir, midnight
 ├── warm/                           # Sunset amber, fiery crimson, golden autumn, warm glows
 ├── purple/                         # Synthwave magenta, violet twilight, lavender
 ├── green/                          # Verdant meadows, mossy waterfalls, pastoral landscapes
 ├── light/                          # High-key minimal compositions, zen ink, watercolor
-├── gifs/                           # Animated pixel art, lofi chill loops, 16-bit retro
 ├── videos/                         # Ultra-HD live MP4 wallpapers for video backends
 ├── LICENSE                         # MIT License
 ├── README.md                       # Visual showcase gallery and client setup guide

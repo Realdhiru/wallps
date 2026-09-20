@@ -24,3 +24,7 @@ env/
 
 # Temporary / Log files
 *.log
+.gemini/
+.claude/
+*.part
+*.crdownload

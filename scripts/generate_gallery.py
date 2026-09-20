@@ -15,14 +15,14 @@ from fractions import Fraction
 from pathlib import Path
 
 CATEGORY_CONFIG = {
-    "warm": {"title": "Warm"},
-    "blue": {"title": "Blue"},
-    "dark": {"title": "Dark"},
-    "purple": {"title": "Purple"},
-    "green": {"title": "Green"},
-    "light": {"title": "Light"},
-    "gifs": {"title": "GIFs"},
-    "videos": {"title": "Videos"},
+    "gifs": {"title": "GIFs", "icon": "✨", "desc": "Animated pixel art, aesthetic retro loops & 60fps micro-animations"},
+    "blue": {"title": "Blue", "icon": "🌊", "desc": "Arctic Nord, deep oceanic gradients, clear skies & cyan hues"},
+    "dark": {"title": "Dark", "icon": "🌑", "desc": "True OLED blacks, moody midnight aesthetics & low-luminance minimalism"},
+    "warm": {"title": "Warm", "icon": "🌅", "desc": "Golden sunsets, fiery crimson horizons, autumn tones & cozy ambers"},
+    "purple": {"title": "Purple", "icon": "🔮", "desc": "Synthwave magenta, cyberpunk neon, violet twilights & lavender"},
+    "green": {"title": "Green", "icon": "🌿", "desc": "Verdant forests, mossy streams, nature vistas & calming emerald"},
+    "light": {"title": "Light", "icon": "☀️", "desc": "High-key zen minimalism, clean watercolor & airy compositions"},
+    "videos": {"title": "Videos", "icon": "🎬", "desc": "Seamless Ultra-HD live wallpapers for mpvpaper and animated backends"},
 }
 
 VALID_EXTENSIONS = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".mp4"}
@@ -159,30 +159,54 @@ def extract_metadata_and_preview(repo_dir, category, filename):
     }
 
 def generate_markdown(repo_dir, catalog):
+    total_walls = sum(len(catalog.get(k, [])) for k in CATEGORY_CONFIG)
+    
     lines = []
-    lines.append("# Wallpapers")
-    lines.append("")
-    lines.append("Curated desktop wallpapers organized by shade and media format.")
-    lines.append("")
     
-    nav_links = []
-    for cat_key, conf in CATEGORY_CONFIG.items():
-        count = len(catalog.get(cat_key, []))
-        link = f"#{conf['title'].lower()}"
-        nav_links.append(f"[{conf['title']}]({link}) ({count})")
-    
-    lines.append(" • ".join(nav_links))
+    # Hero Title & Badges
+    lines.append("<div align=\"center\">")
+    lines.append("")
+    lines.append("# 🌌 Wallpapers Showcase")
+    lines.append("")
+    lines.append("A curated collection of ultra-high-definition desktop wallpapers, animated pixel-art loops, and live video backdrops.")
+    lines.append("")
+    lines.append(f"![Wallpapers](https://img.shields.io/badge/Wallpapers-{total_walls}_Total-7aa2f7?style=for-the-badge&logo=unsplash&logoColor=white) "
+                 f"![Quality](https://img.shields.io/badge/Quality-4K_%7C_5K_%7C_8K-bb9af7?style=for-the-badge&logo=4k) "
+                 f"![Previews](https://img.shields.io/badge/Previews-WebP_Optimized-9ece6a?style=for-the-badge&logo=webp) "
+                 f"![License](https://img.shields.io/badge/License-MIT-f7768e?style=for-the-badge)")
+    lines.append("")
+    lines.append("</div>")
     lines.append("")
     lines.append("---")
     lines.append("")
     
-    # Sections per category
+    # Quick Navigation Bar
+    lines.append("### 🧭 Category Directory")
+    lines.append("")
+    
+    nav_cards = []
+    for cat_key, conf in CATEGORY_CONFIG.items():
+        count = len(catalog.get(cat_key, []))
+        link = f"#{conf['title'].lower()}"
+        icon = conf.get("icon", "📁")
+        nav_cards.append(f"[`{icon} {conf['title']}`]({link}) <sup>**{count}**</sup>")
+    
+    lines.append(" &nbsp;•&nbsp; ".join(nav_cards))
+    lines.append("")
+    lines.append("---")
+    lines.append("")
+    
+    # Sections per category in requested order
     for cat_key, conf in CATEGORY_CONFIG.items():
         items = catalog.get(cat_key, [])
         if not items:
             continue
             
-        lines.append(f"## {conf['title']}")
+        icon = conf.get("icon", "🖼️")
+        desc = conf.get("desc", "")
+        lines.append(f"## {icon} {conf['title']}")
+        if desc:
+            lines.append(f"> *{desc}* &nbsp; • &nbsp; **{len(items)} wallpapers**")
         lines.append("")
         lines.append("| Preview | Preview | Preview |")
         lines.append("| :---: | :---: | :---: |")
@@ -196,7 +220,10 @@ def generate_markdown(repo_dir, catalog):
             aspect = item['aspect']
             sz = item['size_str']
             
-            cell = f"<a href=\"{src_url}\"><img src=\"{prev_url}\" width=\"240\" alt=\"{title}\" /></a><br /><sub>**{title}**<br />`{badge}` • `{aspect}` • `{sz}`</sub>"
+            cell = (
+                f"<a href=\"{src_url}\"><img src=\"{prev_url}\" width=\"240\" alt=\"{title}\" /></a>"
+                f"<br /><sub>**{title}**<br />`{badge}` • `{aspect}` • `{sz}`</sub>"
+            )
             row.append(cell)
             
             if len(row) == 3:
@@ -209,50 +236,54 @@ def generate_markdown(repo_dir, catalog):
             lines.append(f"| {row[0]} | {row[1]} | |")
             
         lines.append("")
+        lines.append(f"<div align=\"right\"><sub><a href=\"#-\">⬆ Back to Top</a></sub></div>")
+        lines.append("")
         lines.append("---")
         lines.append("")
         
     # Setup Guide
-    lines.append("## Setup Guide")
+    lines.append("## 🚀 Setup & Integration")
     lines.append("")
-    lines.append("### Clone")
+    lines.append("### 📦 Quick Clone")
     lines.append("```bash")
     lines.append("git clone git@github.com:Realdhiru/wallps.git ~/Pictures/Wallpapers")
     lines.append("```")
     lines.append("")
-    lines.append("### Sparse Checkout")
+    lines.append("### ⚡ Sparse Checkout (Download Specific Categories)")
+    lines.append("To save bandwidth and only fetch the categories you use:")
     lines.append("```bash")
     lines.append("git clone --filter=blob:none --sparse git@github.com:Realdhiru/wallps.git ~/Pictures/Wallpapers")
     lines.append("cd ~/Pictures/Wallpapers")
-    lines.append("git sparse-checkout set dark blue")
+    lines.append("git sparse-checkout set gifs blue dark warm")
     lines.append("```")
     lines.append("")
-    lines.append("### Setting Wallpapers on Linux & Hyprland")
-    lines.append("* **swww**:")
+    lines.append("### 🖥️ Setting Wallpapers on Hyprland & Linux")
+    lines.append("* **`swww`** (Smooth transitions):")
     lines.append("  ```bash")
-    lines.append("  swww img ~/Pictures/Wallpapers/blue/monterey-nord-dunes.png --transition-type wipe")
+    lines.append("  swww img ~/Pictures/Wallpapers/blue/alone-night-sky-scenery.jpg --transition-type wipe")
     lines.append("  ```")
-    lines.append("* **hyprpaper**:")
+    lines.append("* **`hyprpaper`** (Static fast wallpaper engine):")
     lines.append("  ```ini")
     lines.append("  preload = ~/Pictures/Wallpapers/dark/pure-black-minimal.jpg")
     lines.append("  wallpaper = ,~/Pictures/Wallpapers/dark/pure-black-minimal.jpg")
     lines.append("  ```")
-    lines.append("* **mpvpaper** (videos):")
+    lines.append("* **`mpvpaper`** (Animated live video backends):")
     lines.append("  ```bash")
     lines.append("  mpvpaper '*' ~/Pictures/Wallpapers/videos/cracked-screen-cat.mp4 -o 'loop --no-audio'")
     lines.append("  ```")
     lines.append("")
     lines.append("---")
     lines.append("")
-    lines.append("## Gallery Generator")
+    lines.append("## 🛠️ Gallery Maintenance")
     lines.append("")
+    lines.append("Regenerate lightweight WebP previews and update the gallery at any time:")
     lines.append("```bash")
     lines.append("./scripts/update-gallery.sh")
     lines.append("```")
     lines.append("")
     lines.append("---")
     lines.append("")
-    lines.append("## License")
+    lines.append("## 📜 License")
     lines.append("Wallpapers belong to their respective digital artists, photographers, and studios. Automation scripts and gallery templates are licensed under the [MIT License](LICENSE).")
     lines.append("")
     
