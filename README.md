@@ -4,7 +4,7 @@
 
 A curated collection of ultra-high-definition desktop wallpapers, animated pixel-art loops, and live video backdrops.
 
-![Wallpapers](https://img.shields.io/badge/Wallpapers-319_Total-7aa2f7?style=for-the-badge&logo=unsplash&logoColor=white) ![Quality](https://img.shields.io/badge/Quality-4K_%7C_5K_%7C_8K-bb9af7?style=for-the-badge&logo=4k) ![Previews](https://img.shields.io/badge/Previews-WebP_Optimized-9ece6a?style=for-the-badge&logo=webp) ![License](https://img.shields.io/badge/License-MIT-f7768e?style=for-the-badge)
+![Wallpapers](https://img.shields.io/badge/Wallpapers-320_Total-7aa2f7?style=for-the-badge&logo=unsplash&logoColor=white) ![Quality](https://img.shields.io/badge/Quality-4K_%7C_5K_%7C_8K-bb9af7?style=for-the-badge&logo=4k) ![Previews](https://img.shields.io/badge/Previews-WebP_Optimized-9ece6a?style=for-the-badge&logo=webp) ![License](https://img.shields.io/badge/License-MIT-f7768e?style=for-the-badge)
 
 </div>
 
@@ -12,7 +12,7 @@ A curated collection of ultra-high-definition desktop wallpapers, animated pixel
 
 ### 🧭 Category Directory
 
-[`✨ GIFs`](#gifs) <sup>**55**</sup> &nbsp;•&nbsp; [`🌊 Blue`](#blue) <sup>**108**</sup> &nbsp;•&nbsp; [`🌑 Dark`](#dark) <sup>**64**</sup> &nbsp;•&nbsp; [`🌅 Warm`](#warm) <sup>**54**</sup> &nbsp;•&nbsp; [`🔮 Purple`](#purple) <sup>**11**</sup> &nbsp;•&nbsp; [`🌿 Green`](#green) <sup>**13**</sup> &nbsp;•&nbsp; [`☀️ Light`](#light) <sup>**9**</sup> &nbsp;•&nbsp; [`🎬 Videos`](#videos) <sup>**5**</sup>
+[`✨ GIFs`](#gifs) <sup>**55**</sup> &nbsp;•&nbsp; [`🌊 Blue`](#blue) <sup>**108**</sup> &nbsp;•&nbsp; [`🌑 Dark`](#dark) <sup>**64**</sup> &nbsp;•&nbsp; [`🌅 Warm`](#warm) <sup>**54**</sup> &nbsp;•&nbsp; [`🔮 Purple`](#purple) <sup>**11**</sup> &nbsp;•&nbsp; [`🌿 Green`](#green) <sup>**13**</sup> &nbsp;•&nbsp; [`☀️ Light`](#light) <sup>**10**</sup> &nbsp;•&nbsp; [`🎬 Videos`](#videos) <sup>**5**</sup>
 
 ---
 
@@ -181,13 +181,14 @@ A curated collection of ultra-high-definition desktop wallpapers, animated pixel
 ---
 
 ## ☀️ Light
-> *High-key zen minimalism, clean watercolor & airy compositions* &nbsp; • &nbsp; **9 wallpapers**
+> *High-key zen minimalism, clean watercolor & airy compositions* &nbsp; • &nbsp; **10 wallpapers**
 
 | Preview | Preview | Preview |
 | :---: | :---: | :---: |
-| <a href="light/akira-kaneda-bike.png"><img src="previews/light/akira-kaneda-bike.png.webp" width="240" alt="Akira Kaneda Bike" /></a><br /><sub>**Akira Kaneda Bike**<br />`4K UHD` • `16:9` • `13.0 MB`</sub> | <a href="light/cat-minimal-silhouette.jpg"><img src="previews/light/cat-minimal-silhouette.jpg.webp" width="240" alt="Cat Minimal Silhouette" /></a><br /><sub>**Cat Minimal Silhouette**<br />`4K UHD` • `16:9` • `166 KB`</sub> | <a href="light/chainsawman-sketch.png"><img src="previews/light/chainsawman-sketch.png.webp" width="240" alt="Chainsawman Sketch" /></a><br /><sub>**Chainsawman Sketch**<br />`8K UHD` • `16:9` • `9.6 MB`</sub> |
-| <a href="light/frieren-beyond-journeys-end.jpg"><img src="previews/light/frieren-beyond-journeys-end.jpg.webp" width="240" alt="Frieren Beyond Journeys End" /></a><br /><sub>**Frieren Beyond Journeys End**<br />`1440p` • `21:9` • `3.7 MB`</sub> | <a href="light/japanese-calligraphy-zen.jpg"><img src="previews/light/japanese-calligraphy-zen.jpg.webp" width="240" alt="Japanese Calligraphy Zen" /></a><br /><sub>**Japanese Calligraphy Zen**<br />`1080p` • `16:9` • `220 KB`</sub> | <a href="light/japanese-watercolor-fantasy-maiden.jpg"><img src="previews/light/japanese-watercolor-fantasy-maiden.jpg.webp" width="240" alt="Japanese Watercolor Fantasy …" /></a><br /><sub>**Japanese Watercolor Fantasy …**<br />`4K UHD` • `2:1` • `873 KB`</sub> |
-| <a href="light/lake-mountain-reflection.jpg"><img src="previews/light/lake-mountain-reflection.jpg.webp" width="240" alt="Lake Mountain Reflection" /></a><br /><sub>**Lake Mountain Reflection**<br />`8K UHD` • `16:9` • `255 KB`</sub> | <a href="light/tranquility.png"><img src="previews/light/tranquility.png.webp" width="240" alt="Tranquility" /></a><br /><sub>**Tranquility**<br />`1440p` • `3:2` • `7.8 MB`</sub> | <a href="light/wal55.png"><img src="previews/light/wal55.png.webp" width="240" alt="Wal55" /></a><br /><sub>**Wal55**<br />`1440p` • `12:5` • `60 KB`</sub> |
+| <a href="light/a-landscape-of-mountains-and-snow.png"><img src="previews/light/a-landscape-of-mountains-and-snow.png.webp" width="240" alt="A Landscape Of Mountains And…" /></a><br /><sub>**A Landscape Of Mountains And…**<br />`5K` • `16:9` • `1.9 MB`</sub> | <a href="light/akira-kaneda-bike.png"><img src="previews/light/akira-kaneda-bike.png.webp" width="240" alt="Akira Kaneda Bike" /></a><br /><sub>**Akira Kaneda Bike**<br />`4K UHD` • `16:9` • `13.0 MB`</sub> | <a href="light/cat-minimal-silhouette.jpg"><img src="previews/light/cat-minimal-silhouette.jpg.webp" width="240" alt="Cat Minimal Silhouette" /></a><br /><sub>**Cat Minimal Silhouette**<br />`4K UHD` • `16:9` • `166 KB`</sub> |
+| <a href="light/chainsawman-sketch.png"><img src="previews/light/chainsawman-sketch.png.webp" width="240" alt="Chainsawman Sketch" /></a><br /><sub>**Chainsawman Sketch**<br />`8K UHD` • `16:9` • `9.6 MB`</sub> | <a href="light/frieren-beyond-journeys-end.jpg"><img src="previews/light/frieren-beyond-journeys-end.jpg.webp" width="240" alt="Frieren Beyond Journeys End" /></a><br /><sub>**Frieren Beyond Journeys End**<br />`1440p` • `21:9` • `3.7 MB`</sub> | <a href="light/japanese-calligraphy-zen.jpg"><img src="previews/light/japanese-calligraphy-zen.jpg.webp" width="240" alt="Japanese Calligraphy Zen" /></a><br /><sub>**Japanese Calligraphy Zen**<br />`1080p` • `16:9` • `220 KB`</sub> |
+| <a href="light/japanese-watercolor-fantasy-maiden.jpg"><img src="previews/light/japanese-watercolor-fantasy-maiden.jpg.webp" width="240" alt="Japanese Watercolor Fantasy …" /></a><br /><sub>**Japanese Watercolor Fantasy …**<br />`4K UHD` • `2:1` • `873 KB`</sub> | <a href="light/lake-mountain-reflection.jpg"><img src="previews/light/lake-mountain-reflection.jpg.webp" width="240" alt="Lake Mountain Reflection" /></a><br /><sub>**Lake Mountain Reflection**<br />`8K UHD` • `16:9` • `255 KB`</sub> | <a href="light/tranquility.png"><img src="previews/light/tranquility.png.webp" width="240" alt="Tranquility" /></a><br /><sub>**Tranquility**<br />`1440p` • `3:2` • `7.8 MB`</sub> |
+| <a href="light/wal55.png"><img src="previews/light/wal55.png.webp" width="240" alt="Wal55" /></a><br /><sub>**Wal55**<br />`1440p` • `12:5` • `60 KB`</sub> | | |
 
 <div align="right"><sub><a href="#-">⬆ Back to Top</a></sub></div>
 
