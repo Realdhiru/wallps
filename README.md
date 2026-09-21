@@ -4,7 +4,7 @@
 
 A curated collection of ultra-high-definition desktop wallpapers, animated pixel-art loops, and live video backdrops.
 
-![Wallpapers](https://img.shields.io/badge/Wallpapers-261_Total-7aa2f7?style=for-the-badge&logo=unsplash&logoColor=white) ![Quality](https://img.shields.io/badge/Quality-4K_%7C_5K_%7C_8K-bb9af7?style=for-the-badge&logo=4k) ![Previews](https://img.shields.io/badge/Previews-WebP_Optimized-9ece6a?style=for-the-badge&logo=webp) ![License](https://img.shields.io/badge/License-MIT-f7768e?style=for-the-badge)
+![Wallpapers](https://img.shields.io/badge/Wallpapers-262_Total-7aa2f7?style=for-the-badge&logo=unsplash&logoColor=white) ![Quality](https://img.shields.io/badge/Quality-4K_%7C_5K_%7C_8K-bb9af7?style=for-the-badge&logo=4k) ![Previews](https://img.shields.io/badge/Previews-WebP_Optimized-9ece6a?style=for-the-badge&logo=webp) ![License](https://img.shields.io/badge/License-MIT-f7768e?style=for-the-badge)
 
 </div>
 
@@ -12,7 +12,7 @@ A curated collection of ultra-high-definition desktop wallpapers, animated pixel
 
 ### 🧭 Category Directory
 
-[`✨ GIFs`](#gifs) <sup>**55**</sup> &nbsp;•&nbsp; [`🌊 Blue`](#blue) <sup>**77**</sup> &nbsp;•&nbsp; [`🌑 Dark`](#dark) <sup>**52**</sup> &nbsp;•&nbsp; [`🌅 Warm`](#warm) <sup>**45**</sup> &nbsp;•&nbsp; [`🔮 Purple`](#purple) <sup>**10**</sup> &nbsp;•&nbsp; [`🌿 Green`](#green) <sup>**10**</sup> &nbsp;•&nbsp; [`☀️ Light`](#light) <sup>**7**</sup> &nbsp;•&nbsp; [`🎬 Videos`](#videos) <sup>**5**</sup>
+[`✨ GIFs`](#gifs) <sup>**55**</sup> &nbsp;•&nbsp; [`🌊 Blue`](#blue) <sup>**77**</sup> &nbsp;•&nbsp; [`🌑 Dark`](#dark) <sup>**52**</sup> &nbsp;•&nbsp; [`🌅 Warm`](#warm) <sup>**46**</sup> &nbsp;•&nbsp; [`🔮 Purple`](#purple) <sup>**10**</sup> &nbsp;•&nbsp; [`🌿 Green`](#green) <sup>**10**</sup> &nbsp;•&nbsp; [`☀️ Light`](#light) <sup>**7**</sup> &nbsp;•&nbsp; [`🎬 Videos`](#videos) <sup>**5**</sup>
 
 ---
 
@@ -110,7 +110,7 @@ A curated collection of ultra-high-definition desktop wallpapers, animated pixel
 ---
 
 ## 🌅 Warm
-> *Golden sunsets, fiery crimson horizons, autumn tones & cozy ambers* &nbsp; • &nbsp; **45 wallpapers**
+> *Golden sunsets, fiery crimson horizons, autumn tones & cozy ambers* &nbsp; • &nbsp; **46 wallpapers**
 
 | Preview | Preview | Preview |
 | :---: | :---: | :---: |
@@ -128,7 +128,8 @@ A curated collection of ultra-high-definition desktop wallpapers, animated pixel
 | <a href="warm/stormveil-castle-elden-ring.jpg"><img src="previews/warm/stormveil-castle-elden-ring.jpg.webp" width="240" alt="Stormveil Castle Elden Ring" /></a><br /><sub>**Stormveil Castle Elden Ring**<br />`4K UHD` • `16:9` • `5.4 MB`</sub> | <a href="warm/sun-garden-temple.png"><img src="previews/warm/sun-garden-temple.png.webp" width="240" alt="Sun Garden Temple" /></a><br /><sub>**Sun Garden Temple**<br />`4K UHD` • `16:9` • `2.2 MB`</sub> | <a href="warm/vintage-tokyo-street-crossing.jpg"><img src="previews/warm/vintage-tokyo-street-crossing.jpg.webp" width="240" alt="Vintage Tokyo Street Crossing" /></a><br /><sub>**Vintage Tokyo Street Crossing**<br />`4K UHD` • `3:2` • `1019 KB`</sub> |
 | <a href="warm/wal02.png"><img src="previews/warm/wal02.png.webp" width="240" alt="Wal02" /></a><br /><sub>**Wal02**<br />`1080p` • `16:9` • `2.0 MB`</sub> | <a href="warm/wal03.jpg"><img src="previews/warm/wal03.jpg.webp" width="240" alt="Wal03" /></a><br /><sub>**Wal03**<br />`1440p` • `17:11` • `535 KB`</sub> | <a href="warm/wal11.png"><img src="previews/warm/wal11.png.webp" width="240" alt="Wal11" /></a><br /><sub>**Wal11**<br />`1080p` • `16:9` • `2.6 MB`</sub> |
 | <a href="warm/wal13.png"><img src="previews/warm/wal13.png.webp" width="240" alt="Wal13" /></a><br /><sub>**Wal13**<br />`1080p` • `16:9` • `3.4 MB`</sub> | <a href="warm/wal15.png"><img src="previews/warm/wal15.png.webp" width="240" alt="Wal15" /></a><br /><sub>**Wal15**<br />`1080p` • `16:9` • `2.3 MB`</sub> | <a href="warm/wal21.png"><img src="previews/warm/wal21.png.webp" width="240" alt="Wal21" /></a><br /><sub>**Wal21**<br />`5K` • `4:3` • `11.6 MB`</sub> |
-| <a href="warm/wal42.jpg"><img src="previews/warm/wal42.jpg.webp" width="240" alt="Wal42" /></a><br /><sub>**Wal42**<br />`1440p` • `16:9` • `503 KB`</sub> | <a href="warm/windows-11-bloom-light.jpg"><img src="previews/warm/windows-11-bloom-light.jpg.webp" width="240" alt="Windows 11 Bloom Light" /></a><br /><sub>**Windows 11 Bloom Light**<br />`4K UHD` • `16:10` • `467 KB`</sub> | <a href="warm/wp2200981.jpg"><img src="previews/warm/wp2200981.jpg.webp" width="240" alt="Wp2200981" /></a><br /><sub>**Wp2200981**<br />`1080p` • `16:9` • `358 KB`</sub> |
+| <a href="warm/wal42.jpg"><img src="previews/warm/wal42.jpg.webp" width="240" alt="Wal42" /></a><br /><sub>**Wal42**<br />`1440p` • `16:9` • `503 KB`</sub> | <a href="warm/wal46.png"><img src="previews/warm/wal46.png.webp" width="240" alt="Wal46" /></a><br /><sub>**Wal46**<br />`1080p` • `16:9` • `2.6 MB`</sub> | <a href="warm/windows-11-bloom-light.jpg"><img src="previews/warm/windows-11-bloom-light.jpg.webp" width="240" alt="Windows 11 Bloom Light" /></a><br /><sub>**Windows 11 Bloom Light**<br />`4K UHD` • `16:10` • `467 KB`</sub> |
+| <a href="warm/wp2200981.jpg"><img src="previews/warm/wp2200981.jpg.webp" width="240" alt="Wp2200981" /></a><br /><sub>**Wp2200981**<br />`1080p` • `16:9` • `358 KB`</sub> | | |
 
 <div align="right"><sub><a href="#-">⬆ Back to Top</a></sub></div>
 
