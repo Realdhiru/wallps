@@ -4,7 +4,7 @@
 
 A curated collection of ultra-high-definition desktop wallpapers, animated pixel-art loops, and live video backdrops.
 
-![Wallpapers](https://img.shields.io/badge/Wallpapers-412_Total-7aa2f7?style=for-the-badge&logo=unsplash&logoColor=white) ![Quality](https://img.shields.io/badge/Quality-4K_%7C_5K_%7C_8K-bb9af7?style=for-the-badge&logo=4k) ![Previews](https://img.shields.io/badge/Previews-WebP_Optimized-9ece6a?style=for-the-badge&logo=webp) ![License](https://img.shields.io/badge/License-MIT-f7768e?style=for-the-badge)
+![Wallpapers](https://img.shields.io/badge/Wallpapers-413_Total-7aa2f7?style=for-the-badge&logo=unsplash&logoColor=white) ![Quality](https://img.shields.io/badge/Quality-4K_%7C_5K_%7C_8K-bb9af7?style=for-the-badge&logo=4k) ![Previews](https://img.shields.io/badge/Previews-WebP_Optimized-9ece6a?style=for-the-badge&logo=webp) ![License](https://img.shields.io/badge/License-MIT-f7768e?style=for-the-badge)
 
 </div>
 
@@ -12,7 +12,7 @@ A curated collection of ultra-high-definition desktop wallpapers, animated pixel
 
 ### 🧭 Category Directory
 
-[`✨ GIFs`](#gifs) <sup>**55**</sup> &nbsp;•&nbsp; [`🌊 Blue`](#blue) <sup>**137**</sup> &nbsp;•&nbsp; [`🌑 Dark`](#dark) <sup>**96**</sup> &nbsp;•&nbsp; [`🌅 Warm`](#warm) <sup>**78**</sup> &nbsp;•&nbsp; [`🔮 Purple`](#purple) <sup>**12**</sup> &nbsp;•&nbsp; [`🌿 Green`](#green) <sup>**13**</sup> &nbsp;•&nbsp; [`☀️ Light`](#light) <sup>**16**</sup> &nbsp;•&nbsp; [`🎬 Videos`](#videos) <sup>**5**</sup>
+[`✨ GIFs`](#gifs) <sup>**55**</sup> &nbsp;•&nbsp; [`🌊 Blue`](#blue) <sup>**137**</sup> &nbsp;•&nbsp; [`🌑 Dark`](#dark) <sup>**96**</sup> &nbsp;•&nbsp; [`🌅 Warm`](#warm) <sup>**78**</sup> &nbsp;•&nbsp; [`🔮 Purple`](#purple) <sup>**12**</sup> &nbsp;•&nbsp; [`🌿 Green`](#green) <sup>**14**</sup> &nbsp;•&nbsp; [`☀️ Light`](#light) <sup>**16**</sup> &nbsp;•&nbsp; [`🎬 Videos`](#videos) <sup>**5**</sup>
 
 ---
 
@@ -194,7 +194,7 @@ A curated collection of ultra-high-definition desktop wallpapers, animated pixel
 ---
 
 ## 🌿 Green
-> *Verdant forests, mossy streams, nature vistas & calming emerald* &nbsp; • &nbsp; **13 wallpapers**
+> *Verdant forests, mossy streams, nature vistas & calming emerald* &nbsp; • &nbsp; **14 wallpapers**
 
 | Preview | Preview | Preview |
 | :---: | :---: | :---: |
@@ -202,7 +202,7 @@ A curated collection of ultra-high-definition desktop wallpapers, animated pixel
 | <a href="green/desert-oasis-night.jpg"><img src="previews/green/desert-oasis-night.jpg.webp" width="240" alt="Desert Oasis Night" /></a><br /><sub>**Desert Oasis Night**<br />`1080p` • `16:9` • `834 KB`</sub> | <a href="green/green-house-countryside.png"><img src="previews/green/green-house-countryside.png.webp" width="240" alt="Green House Countryside" /></a><br /><sub>**Green House Countryside**<br />`4K UHD` • `16:9` • `9.9 MB`</sub> | <a href="green/lone-tree-field.png"><img src="previews/green/lone-tree-field.png.webp" width="240" alt="Lone Tree Field" /></a><br /><sub>**Lone Tree Field**<br />`5K` • `11:8` • `126 KB`</sub> |
 | <a href="green/minimal-anime-portrait.png"><img src="previews/green/minimal-anime-portrait.png.webp" width="240" alt="Minimal Anime Portrait" /></a><br /><sub>**Minimal Anime Portrait**<br />`5K` • `16:9` • `12.0 MB`</sub> | <a href="green/minimal-green-hills-windmill.jpg"><img src="previews/green/minimal-green-hills-windmill.jpg.webp" width="240" alt="Minimal Green Hills Windmill" /></a><br /><sub>**Minimal Green Hills Windmill**<br />`4K UHD` • `16:9` • `148 KB`</sub> | <a href="green/misty-pine-mountains.jpg"><img src="previews/green/misty-pine-mountains.jpg.webp" width="240" alt="Misty Pine Mountains" /></a><br /><sub>**Misty Pine Mountains**<br />`5K` • `3:2` • `3.5 MB`</sub> |
 | <a href="green/mossy-forest-waterfall.jpg"><img src="previews/green/mossy-forest-waterfall.jpg.webp" width="240" alt="Mossy Forest Waterfall" /></a><br /><sub>**Mossy Forest Waterfall**<br />`5K` • `3:2` • `4.6 MB`</sub> | <a href="green/pixel-alpine-meadow-mountains.jpg"><img src="previews/green/pixel-alpine-meadow-mountains.jpg.webp" width="240" alt="Pixel Alpine Meadow Mountains" /></a><br /><sub>**Pixel Alpine Meadow Mountains**<br />`4K UHD` • `16:9` • `1.3 MB`</sub> | <a href="green/solitary-scifi-robot.png"><img src="previews/green/solitary-scifi-robot.png.webp" width="240" alt="Solitary Scifi Robot" /></a><br /><sub>**Solitary Scifi Robot**<br />`1440p` • `4:3` • `82 KB`</sub> |
-| <a href="green/wal54.jpg"><img src="previews/green/wal54.jpg.webp" width="240" alt="Wal54" /></a><br /><sub>**Wal54**<br />`4K UHD` • `19:11` • `1.8 MB`</sub> | | |
+| <a href="green/wal54.jpg"><img src="previews/green/wal54.jpg.webp" width="240" alt="Wal54" /></a><br /><sub>**Wal54**<br />`4K UHD` • `19:11` • `1.8 MB`</sub> | <a href="green/wallpaper.png"><img src="previews/green/wallpaper.png.webp" width="240" alt="Wallpaper" /></a><br /><sub>**Wallpaper**<br />`5K` • `16:9` • `25.5 MB`</sub> | |
 
 <div align="right"><sub><a href="#-">⬆ Back to Top</a></sub></div>
 
