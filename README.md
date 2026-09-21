@@ -4,7 +4,7 @@
 
 A curated collection of ultra-high-definition desktop wallpapers, animated pixel-art loops, and live video backdrops.
 
-![Wallpapers](https://img.shields.io/badge/Wallpapers-349_Total-7aa2f7?style=for-the-badge&logo=unsplash&logoColor=white) ![Quality](https://img.shields.io/badge/Quality-4K_%7C_5K_%7C_8K-bb9af7?style=for-the-badge&logo=4k) ![Previews](https://img.shields.io/badge/Previews-WebP_Optimized-9ece6a?style=for-the-badge&logo=webp) ![License](https://img.shields.io/badge/License-MIT-f7768e?style=for-the-badge)
+![Wallpapers](https://img.shields.io/badge/Wallpapers-350_Total-7aa2f7?style=for-the-badge&logo=unsplash&logoColor=white) ![Quality](https://img.shields.io/badge/Quality-4K_%7C_5K_%7C_8K-bb9af7?style=for-the-badge&logo=4k) ![Previews](https://img.shields.io/badge/Previews-WebP_Optimized-9ece6a?style=for-the-badge&logo=webp) ![License](https://img.shields.io/badge/License-MIT-f7768e?style=for-the-badge)
 
 </div>
 
@@ -12,7 +12,7 @@ A curated collection of ultra-high-definition desktop wallpapers, animated pixel
 
 ### 🧭 Category Directory
 
-[`✨ GIFs`](#gifs) <sup>**55**</sup> &nbsp;•&nbsp; [`🌊 Blue`](#blue) <sup>**114**</sup> &nbsp;•&nbsp; [`🌑 Dark`](#dark) <sup>**87**</sup> &nbsp;•&nbsp; [`🌅 Warm`](#warm) <sup>**54**</sup> &nbsp;•&nbsp; [`🔮 Purple`](#purple) <sup>**11**</sup> &nbsp;•&nbsp; [`🌿 Green`](#green) <sup>**13**</sup> &nbsp;•&nbsp; [`☀️ Light`](#light) <sup>**10**</sup> &nbsp;•&nbsp; [`🎬 Videos`](#videos) <sup>**5**</sup>
+[`✨ GIFs`](#gifs) <sup>**55**</sup> &nbsp;•&nbsp; [`🌊 Blue`](#blue) <sup>**114**</sup> &nbsp;•&nbsp; [`🌑 Dark`](#dark) <sup>**88**</sup> &nbsp;•&nbsp; [`🌅 Warm`](#warm) <sup>**54**</sup> &nbsp;•&nbsp; [`🔮 Purple`](#purple) <sup>**11**</sup> &nbsp;•&nbsp; [`🌿 Green`](#green) <sup>**13**</sup> &nbsp;•&nbsp; [`☀️ Light`](#light) <sup>**10**</sup> &nbsp;•&nbsp; [`🎬 Videos`](#videos) <sup>**5**</sup>
 
 ---
 
@@ -94,7 +94,7 @@ A curated collection of ultra-high-definition desktop wallpapers, animated pixel
 ---
 
 ## 🌑 Dark
-> *True OLED blacks, moody midnight aesthetics & low-luminance minimalism* &nbsp; • &nbsp; **87 wallpapers**
+> *True OLED blacks, moody midnight aesthetics & low-luminance minimalism* &nbsp; • &nbsp; **88 wallpapers**
 
 | Preview | Preview | Preview |
 | :---: | :---: | :---: |
@@ -126,7 +126,8 @@ A curated collection of ultra-high-definition desktop wallpapers, animated pixel
 | <a href="dark/wal23.png"><img src="previews/dark/wal23.png.webp" width="240" alt="Wal23" /></a><br /><sub>**Wal23**<br />`1080p` • `16:9` • `648 KB`</sub> | <a href="dark/wal24.png"><img src="previews/dark/wal24.png.webp" width="240" alt="Wal24" /></a><br /><sub>**Wal24**<br />`1080p` • `16:9` • `1.4 MB`</sub> | <a href="dark/wal51.png"><img src="previews/dark/wal51.png.webp" width="240" alt="Wal51" /></a><br /><sub>**Wal51**<br />`4K UHD` • `16:9` • `1 KB`</sub> |
 | <a href="dark/wal61.jpg"><img src="previews/dark/wal61.jpg.webp" width="240" alt="Wal61" /></a><br /><sub>**Wal61**<br />`1080p` • `3:2` • `127 KB`</sub> | <a href="dark/wal65.png"><img src="previews/dark/wal65.png.webp" width="240" alt="Wal65" /></a><br /><sub>**Wal65**<br />`1440p` • `16:10` • `57 KB`</sub> | <a href="dark/wal66.png"><img src="previews/dark/wal66.png.webp" width="240" alt="Wal66" /></a><br /><sub>**Wal66**<br />`1080p` • `16:9` • `16 KB`</sub> |
 | <a href="dark/wal69.png"><img src="previews/dark/wal69.png.webp" width="240" alt="Wal69" /></a><br /><sub>**Wal69**<br />`1080p` • `16:9` • `290 KB`</sub> | <a href="dark/wanderer-explore-mountains.jpg"><img src="previews/dark/wanderer-explore-mountains.jpg.webp" width="240" alt="Wanderer Explore Mountains" /></a><br /><sub>**Wanderer Explore Mountains**<br />`1080p` • `16:9` • `291 KB`</sub> | <a href="dark/windows-11-bloom-dark.jpg"><img src="previews/dark/windows-11-bloom-dark.jpg.webp" width="240" alt="Windows 11 Bloom Dark" /></a><br /><sub>**Windows 11 Bloom Dark**<br />`4K UHD` • `16:9` • `215 KB`</sub> |
-| <a href="dark/windows-bloom-dark.jpg"><img src="previews/dark/windows-bloom-dark.jpg.webp" width="240" alt="Windows Bloom Dark" /></a><br /><sub>**Windows Bloom Dark**<br />`4K UHD` • `16:10` • `418 KB`</sub> | <a href="dark/wp14118497.jpg"><img src="previews/dark/wp14118497.jpg.webp" width="240" alt="Wp14118497" /></a><br /><sub>**Wp14118497**<br />`1440p` • `16:10` • `143 KB`</sub> | <a href="dark/yqmlmx.png"><img src="previews/dark/yqmlmx.png.webp" width="240" alt="Yqmlmx" /></a><br /><sub>**Yqmlmx**<br />`4K UHD` • `16:9` • `1.6 MB`</sub> |
+| <a href="dark/windows-bloom-dark.jpg"><img src="previews/dark/windows-bloom-dark.jpg.webp" width="240" alt="Windows Bloom Dark" /></a><br /><sub>**Windows Bloom Dark**<br />`4K UHD` • `16:10` • `418 KB`</sub> | <a href="dark/wp14118497.jpg"><img src="previews/dark/wp14118497.jpg.webp" width="240" alt="Wp14118497" /></a><br /><sub>**Wp14118497**<br />`1440p` • `16:10` • `143 KB`</sub> | <a href="dark/xe5eel.png"><img src="previews/dark/xe5eel.png.webp" width="240" alt="Xe5Eel" /></a><br /><sub>**Xe5Eel**<br />`1440p` • `16:9` • `79 KB`</sub> |
+| <a href="dark/yqmlmx.png"><img src="previews/dark/yqmlmx.png.webp" width="240" alt="Yqmlmx" /></a><br /><sub>**Yqmlmx**<br />`4K UHD` • `16:9` • `1.6 MB`</sub> | | |
 
 <div align="right"><sub><a href="#-">⬆ Back to Top</a></sub></div>
 
