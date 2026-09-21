@@ -4,7 +4,7 @@
 
 A curated collection of ultra-high-definition desktop wallpapers, animated pixel-art loops, and live video backdrops.
 
-![Wallpapers](https://img.shields.io/badge/Wallpapers-397_Total-7aa2f7?style=for-the-badge&logo=unsplash&logoColor=white) ![Quality](https://img.shields.io/badge/Quality-4K_%7C_5K_%7C_8K-bb9af7?style=for-the-badge&logo=4k) ![Previews](https://img.shields.io/badge/Previews-WebP_Optimized-9ece6a?style=for-the-badge&logo=webp) ![License](https://img.shields.io/badge/License-MIT-f7768e?style=for-the-badge)
+![Wallpapers](https://img.shields.io/badge/Wallpapers-399_Total-7aa2f7?style=for-the-badge&logo=unsplash&logoColor=white) ![Quality](https://img.shields.io/badge/Quality-4K_%7C_5K_%7C_8K-bb9af7?style=for-the-badge&logo=4k) ![Previews](https://img.shields.io/badge/Previews-WebP_Optimized-9ece6a?style=for-the-badge&logo=webp) ![License](https://img.shields.io/badge/License-MIT-f7768e?style=for-the-badge)
 
 </div>
 
@@ -12,7 +12,7 @@ A curated collection of ultra-high-definition desktop wallpapers, animated pixel
 
 ### 🧭 Category Directory
 
-[`✨ GIFs`](#gifs) <sup>**55**</sup> &nbsp;•&nbsp; [`🌊 Blue`](#blue) <sup>**136**</sup> &nbsp;•&nbsp; [`🌑 Dark`](#dark) <sup>**95**</sup> &nbsp;•&nbsp; [`🌅 Warm`](#warm) <sup>**71**</sup> &nbsp;•&nbsp; [`🔮 Purple`](#purple) <sup>**11**</sup> &nbsp;•&nbsp; [`🌿 Green`](#green) <sup>**13**</sup> &nbsp;•&nbsp; [`☀️ Light`](#light) <sup>**11**</sup> &nbsp;•&nbsp; [`🎬 Videos`](#videos) <sup>**5**</sup>
+[`✨ GIFs`](#gifs) <sup>**55**</sup> &nbsp;•&nbsp; [`🌊 Blue`](#blue) <sup>**136**</sup> &nbsp;•&nbsp; [`🌑 Dark`](#dark) <sup>**96**</sup> &nbsp;•&nbsp; [`🌅 Warm`](#warm) <sup>**71**</sup> &nbsp;•&nbsp; [`🔮 Purple`](#purple) <sup>**12**</sup> &nbsp;•&nbsp; [`🌿 Green`](#green) <sup>**13**</sup> &nbsp;•&nbsp; [`☀️ Light`](#light) <sup>**11**</sup> &nbsp;•&nbsp; [`🎬 Videos`](#videos) <sup>**5**</sup>
 
 ---
 
@@ -102,7 +102,7 @@ A curated collection of ultra-high-definition desktop wallpapers, animated pixel
 ---
 
 ## 🌑 Dark
-> *True OLED blacks, moody midnight aesthetics & low-luminance minimalism* &nbsp; • &nbsp; **95 wallpapers**
+> *True OLED blacks, moody midnight aesthetics & low-luminance minimalism* &nbsp; • &nbsp; **96 wallpapers**
 
 | Preview | Preview | Preview |
 | :---: | :---: | :---: |
@@ -137,7 +137,7 @@ A curated collection of ultra-high-definition desktop wallpapers, animated pixel
 | <a href="dark/wal61.jpg"><img src="previews/dark/wal61.jpg.webp" width="240" alt="Wal61" /></a><br /><sub>**Wal61**<br />`1080p` • `3:2` • `127 KB`</sub> | <a href="dark/wal65.png"><img src="previews/dark/wal65.png.webp" width="240" alt="Wal65" /></a><br /><sub>**Wal65**<br />`1440p` • `16:10` • `57 KB`</sub> | <a href="dark/wal66.png"><img src="previews/dark/wal66.png.webp" width="240" alt="Wal66" /></a><br /><sub>**Wal66**<br />`1080p` • `16:9` • `16 KB`</sub> |
 | <a href="dark/wal69.png"><img src="previews/dark/wal69.png.webp" width="240" alt="Wal69" /></a><br /><sub>**Wal69**<br />`1080p` • `16:9` • `290 KB`</sub> | <a href="dark/wanderer-explore-mountains.jpg"><img src="previews/dark/wanderer-explore-mountains.jpg.webp" width="240" alt="Wanderer Explore Mountains" /></a><br /><sub>**Wanderer Explore Mountains**<br />`1080p` • `16:9` • `291 KB`</sub> | <a href="dark/windows-11-bloom-dark.jpg"><img src="previews/dark/windows-11-bloom-dark.jpg.webp" width="240" alt="Windows 11 Bloom Dark" /></a><br /><sub>**Windows 11 Bloom Dark**<br />`4K UHD` • `16:9` • `215 KB`</sub> |
 | <a href="dark/windows-bloom-dark.jpg"><img src="previews/dark/windows-bloom-dark.jpg.webp" width="240" alt="Windows Bloom Dark" /></a><br /><sub>**Windows Bloom Dark**<br />`4K UHD` • `16:10` • `418 KB`</sub> | <a href="dark/wp14118497.jpg"><img src="previews/dark/wp14118497.jpg.webp" width="240" alt="Wp14118497" /></a><br /><sub>**Wp14118497**<br />`1440p` • `16:10` • `143 KB`</sub> | <a href="dark/xe5eel.png"><img src="previews/dark/xe5eel.png.webp" width="240" alt="Xe5Eel" /></a><br /><sub>**Xe5Eel**<br />`1440p` • `16:9` • `79 KB`</sub> |
-| <a href="dark/yqgwpg.png"><img src="previews/dark/yqgwpg.png.webp" width="240" alt="Yqgwpg" /></a><br /><sub>**Yqgwpg**<br />`1440p` • `16:9` • `3.8 MB`</sub> | <a href="dark/yqmlmx.png"><img src="previews/dark/yqmlmx.png.webp" width="240" alt="Yqmlmx" /></a><br /><sub>**Yqmlmx**<br />`4K UHD` • `16:9` • `1.6 MB`</sub> | |
+| <a href="dark/yqgwpg.png"><img src="previews/dark/yqgwpg.png.webp" width="240" alt="Yqgwpg" /></a><br /><sub>**Yqgwpg**<br />`1440p` • `16:9` • `3.8 MB`</sub> | <a href="dark/yqmlmx.png"><img src="previews/dark/yqmlmx.png.webp" width="240" alt="Yqmlmx" /></a><br /><sub>**Yqmlmx**<br />`4K UHD` • `16:9` • `1.6 MB`</sub> | <a href="dark/zpoxyj.png"><img src="previews/dark/zpoxyj.png.webp" width="240" alt="Zpoxyj" /></a><br /><sub>**Zpoxyj**<br />`1080p` • `16:9` • `1.0 MB`</sub> |
 
 <div align="right"><sub><a href="#-">⬆ Back to Top</a></sub></div>
 
@@ -178,14 +178,14 @@ A curated collection of ultra-high-definition desktop wallpapers, animated pixel
 ---
 
 ## 🔮 Purple
-> *Synthwave magenta, cyberpunk neon, violet twilights & lavender* &nbsp; • &nbsp; **11 wallpapers**
+> *Synthwave magenta, cyberpunk neon, violet twilights & lavender* &nbsp; • &nbsp; **12 wallpapers**
 
 | Preview | Preview | Preview |
 | :---: | :---: | :---: |
 | <a href="purple/audio-bunny.png"><img src="previews/purple/audio-bunny.png.webp" width="240" alt="Audio Bunny" /></a><br /><sub>**Audio Bunny**<br />`1440p` • `16:9` • `1.7 MB`</sub> | <a href="purple/bubbles-water-purple.jpg"><img src="previews/purple/bubbles-water-purple.jpg.webp" width="240" alt="Bubbles Water Purple" /></a><br /><sub>**Bubbles Water Purple**<br />`4K UHD` • `16:9` • `468 KB`</sub> | <a href="purple/cowboy-bebop-spike-silhouette.png"><img src="previews/purple/cowboy-bebop-spike-silhouette.png.webp" width="240" alt="Cowboy Bebop Spike Silhouette" /></a><br /><sub>**Cowboy Bebop Spike Silhouette**<br />`4K UHD` • `16:9` • `394 KB`</sub> |
 | <a href="purple/cowboy-bebop-spike-spiegel.png"><img src="previews/purple/cowboy-bebop-spike-spiegel.png.webp" width="240" alt="Cowboy Bebop Spike Spiegel" /></a><br /><sub>**Cowboy Bebop Spike Spiegel**<br />`4K UHD` • `16:9` • `3.7 MB`</sub> | <a href="purple/dfrohy3-5f12ff02-f76d-4b85-ba6b-bf0bea020c52.jpg"><img src="previews/purple/dfrohy3-5f12ff02-f76d-4b85-ba6b-bf0bea020c52.jpg.webp" width="240" alt="Dfrohy3 5F12Ff02 F76D 4B85 B…" /></a><br /><sub>**Dfrohy3 5F12Ff02 F76D 4B85 B…**<br />`1080p` • `16:9` • `837 KB`</sub> | <a href="purple/firewatch-sunset-valley.jpg"><img src="previews/purple/firewatch-sunset-valley.jpg.webp" width="240" alt="Firewatch Sunset Valley" /></a><br /><sub>**Firewatch Sunset Valley**<br />`8K UHD` • `16:9` • `1.5 MB`</sub> |
-| <a href="purple/mountain-dragon-pink-sky.jpg"><img src="previews/purple/mountain-dragon-pink-sky.jpg.webp" width="240" alt="Mountain Dragon Pink Sky" /></a><br /><sub>**Mountain Dragon Pink Sky**<br />`5K` • `16:9` • `10.6 MB`</sub> | <a href="purple/pearl-dark-abstract.jpg"><img src="previews/purple/pearl-dark-abstract.jpg.webp" width="240" alt="Pearl Dark Abstract" /></a><br /><sub>**Pearl Dark Abstract**<br />`5K` • `16:9` • `10.6 MB`</sub> | <a href="purple/pixel-sunset-lake-reflection.jpg"><img src="previews/purple/pixel-sunset-lake-reflection.jpg.webp" width="240" alt="Pixel Sunset Lake Reflection" /></a><br /><sub>**Pixel Sunset Lake Reflection**<br />`1080p` • `16:9` • `130 KB`</sub> |
-| <a href="purple/purple-snowy-pine-forest.png"><img src="previews/purple/purple-snowy-pine-forest.png.webp" width="240" alt="Purple Snowy Pine Forest" /></a><br /><sub>**Purple Snowy Pine Forest**<br />`1080p` • `16:9` • `1.0 MB`</sub> | <a href="purple/red-fox-snowy-woods.jpg"><img src="previews/purple/red-fox-snowy-woods.jpg.webp" width="240" alt="Red Fox Snowy Woods" /></a><br /><sub>**Red Fox Snowy Woods**<br />`5K` • `5:3` • `8.0 MB`</sub> | |
+| <a href="purple/k828w6.jpg"><img src="previews/purple/k828w6.jpg.webp" width="240" alt="K828W6" /></a><br /><sub>**K828W6**<br />`4K UHD` • `4:3` • `1.7 MB`</sub> | <a href="purple/mountain-dragon-pink-sky.jpg"><img src="previews/purple/mountain-dragon-pink-sky.jpg.webp" width="240" alt="Mountain Dragon Pink Sky" /></a><br /><sub>**Mountain Dragon Pink Sky**<br />`5K` • `16:9` • `10.6 MB`</sub> | <a href="purple/pearl-dark-abstract.jpg"><img src="previews/purple/pearl-dark-abstract.jpg.webp" width="240" alt="Pearl Dark Abstract" /></a><br /><sub>**Pearl Dark Abstract**<br />`5K` • `16:9` • `10.6 MB`</sub> |
+| <a href="purple/pixel-sunset-lake-reflection.jpg"><img src="previews/purple/pixel-sunset-lake-reflection.jpg.webp" width="240" alt="Pixel Sunset Lake Reflection" /></a><br /><sub>**Pixel Sunset Lake Reflection**<br />`1080p` • `16:9` • `130 KB`</sub> | <a href="purple/purple-snowy-pine-forest.png"><img src="previews/purple/purple-snowy-pine-forest.png.webp" width="240" alt="Purple Snowy Pine Forest" /></a><br /><sub>**Purple Snowy Pine Forest**<br />`1080p` • `16:9` • `1.0 MB`</sub> | <a href="purple/red-fox-snowy-woods.jpg"><img src="previews/purple/red-fox-snowy-woods.jpg.webp" width="240" alt="Red Fox Snowy Woods" /></a><br /><sub>**Red Fox Snowy Woods**<br />`5K` • `5:3` • `8.0 MB`</sub> |
 
 <div align="right"><sub><a href="#-">⬆ Back to Top</a></sub></div>
 
