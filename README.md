@@ -4,7 +4,7 @@
 
 A curated collection of ultra-high-definition desktop wallpapers, animated pixel-art loops, and live video backdrops.
 
-![Wallpapers](https://img.shields.io/badge/Wallpapers-314_Total-7aa2f7?style=for-the-badge&logo=unsplash&logoColor=white) ![Quality](https://img.shields.io/badge/Quality-4K_%7C_5K_%7C_8K-bb9af7?style=for-the-badge&logo=4k) ![Previews](https://img.shields.io/badge/Previews-WebP_Optimized-9ece6a?style=for-the-badge&logo=webp) ![License](https://img.shields.io/badge/License-MIT-f7768e?style=for-the-badge)
+![Wallpapers](https://img.shields.io/badge/Wallpapers-315_Total-7aa2f7?style=for-the-badge&logo=unsplash&logoColor=white) ![Quality](https://img.shields.io/badge/Quality-4K_%7C_5K_%7C_8K-bb9af7?style=for-the-badge&logo=4k) ![Previews](https://img.shields.io/badge/Previews-WebP_Optimized-9ece6a?style=for-the-badge&logo=webp) ![License](https://img.shields.io/badge/License-MIT-f7768e?style=for-the-badge)
 
 </div>
 
@@ -12,7 +12,7 @@ A curated collection of ultra-high-definition desktop wallpapers, animated pixel
 
 ### 🧭 Category Directory
 
-[`✨ GIFs`](#gifs) <sup>**55**</sup> &nbsp;•&nbsp; [`🌊 Blue`](#blue) <sup>**104**</sup> &nbsp;•&nbsp; [`🌑 Dark`](#dark) <sup>**64**</sup> &nbsp;•&nbsp; [`🌅 Warm`](#warm) <sup>**54**</sup> &nbsp;•&nbsp; [`🔮 Purple`](#purple) <sup>**10**</sup> &nbsp;•&nbsp; [`🌿 Green`](#green) <sup>**13**</sup> &nbsp;•&nbsp; [`☀️ Light`](#light) <sup>**9**</sup> &nbsp;•&nbsp; [`🎬 Videos`](#videos) <sup>**5**</sup>
+[`✨ GIFs`](#gifs) <sup>**55**</sup> &nbsp;•&nbsp; [`🌊 Blue`](#blue) <sup>**104**</sup> &nbsp;•&nbsp; [`🌑 Dark`](#dark) <sup>**64**</sup> &nbsp;•&nbsp; [`🌅 Warm`](#warm) <sup>**54**</sup> &nbsp;•&nbsp; [`🔮 Purple`](#purple) <sup>**11**</sup> &nbsp;•&nbsp; [`🌿 Green`](#green) <sup>**13**</sup> &nbsp;•&nbsp; [`☀️ Light`](#light) <sup>**9**</sup> &nbsp;•&nbsp; [`🎬 Videos`](#videos) <sup>**5**</sup>
 
 ---
 
@@ -151,14 +151,14 @@ A curated collection of ultra-high-definition desktop wallpapers, animated pixel
 ---
 
 ## 🔮 Purple
-> *Synthwave magenta, cyberpunk neon, violet twilights & lavender* &nbsp; • &nbsp; **10 wallpapers**
+> *Synthwave magenta, cyberpunk neon, violet twilights & lavender* &nbsp; • &nbsp; **11 wallpapers**
 
 | Preview | Preview | Preview |
 | :---: | :---: | :---: |
-| <a href="purple/bubbles-water-purple.jpg"><img src="previews/purple/bubbles-water-purple.jpg.webp" width="240" alt="Bubbles Water Purple" /></a><br /><sub>**Bubbles Water Purple**<br />`4K UHD` • `16:9` • `468 KB`</sub> | <a href="purple/cowboy-bebop-spike-silhouette.png"><img src="previews/purple/cowboy-bebop-spike-silhouette.png.webp" width="240" alt="Cowboy Bebop Spike Silhouette" /></a><br /><sub>**Cowboy Bebop Spike Silhouette**<br />`4K UHD` • `16:9` • `394 KB`</sub> | <a href="purple/cowboy-bebop-spike-spiegel.png"><img src="previews/purple/cowboy-bebop-spike-spiegel.png.webp" width="240" alt="Cowboy Bebop Spike Spiegel" /></a><br /><sub>**Cowboy Bebop Spike Spiegel**<br />`4K UHD` • `16:9` • `3.7 MB`</sub> |
-| <a href="purple/dfrohy3-5f12ff02-f76d-4b85-ba6b-bf0bea020c52.jpg"><img src="previews/purple/dfrohy3-5f12ff02-f76d-4b85-ba6b-bf0bea020c52.jpg.webp" width="240" alt="Dfrohy3 5F12Ff02 F76D 4B85 B…" /></a><br /><sub>**Dfrohy3 5F12Ff02 F76D 4B85 B…**<br />`1080p` • `16:9` • `837 KB`</sub> | <a href="purple/firewatch-sunset-valley.jpg"><img src="previews/purple/firewatch-sunset-valley.jpg.webp" width="240" alt="Firewatch Sunset Valley" /></a><br /><sub>**Firewatch Sunset Valley**<br />`8K UHD` • `16:9` • `1.5 MB`</sub> | <a href="purple/mountain-dragon-pink-sky.jpg"><img src="previews/purple/mountain-dragon-pink-sky.jpg.webp" width="240" alt="Mountain Dragon Pink Sky" /></a><br /><sub>**Mountain Dragon Pink Sky**<br />`5K` • `16:9` • `10.6 MB`</sub> |
-| <a href="purple/pearl-dark-abstract.jpg"><img src="previews/purple/pearl-dark-abstract.jpg.webp" width="240" alt="Pearl Dark Abstract" /></a><br /><sub>**Pearl Dark Abstract**<br />`5K` • `16:9` • `10.6 MB`</sub> | <a href="purple/pixel-sunset-lake-reflection.jpg"><img src="previews/purple/pixel-sunset-lake-reflection.jpg.webp" width="240" alt="Pixel Sunset Lake Reflection" /></a><br /><sub>**Pixel Sunset Lake Reflection**<br />`1080p` • `16:9` • `130 KB`</sub> | <a href="purple/purple-snowy-pine-forest.png"><img src="previews/purple/purple-snowy-pine-forest.png.webp" width="240" alt="Purple Snowy Pine Forest" /></a><br /><sub>**Purple Snowy Pine Forest**<br />`1080p` • `16:9` • `1.0 MB`</sub> |
-| <a href="purple/red-fox-snowy-woods.jpg"><img src="previews/purple/red-fox-snowy-woods.jpg.webp" width="240" alt="Red Fox Snowy Woods" /></a><br /><sub>**Red Fox Snowy Woods**<br />`5K` • `5:3` • `8.0 MB`</sub> | | |
+| <a href="purple/audio-bunny.png"><img src="previews/purple/audio-bunny.png.webp" width="240" alt="Audio Bunny" /></a><br /><sub>**Audio Bunny**<br />`1440p` • `16:9` • `1.7 MB`</sub> | <a href="purple/bubbles-water-purple.jpg"><img src="previews/purple/bubbles-water-purple.jpg.webp" width="240" alt="Bubbles Water Purple" /></a><br /><sub>**Bubbles Water Purple**<br />`4K UHD` • `16:9` • `468 KB`</sub> | <a href="purple/cowboy-bebop-spike-silhouette.png"><img src="previews/purple/cowboy-bebop-spike-silhouette.png.webp" width="240" alt="Cowboy Bebop Spike Silhouette" /></a><br /><sub>**Cowboy Bebop Spike Silhouette**<br />`4K UHD` • `16:9` • `394 KB`</sub> |
+| <a href="purple/cowboy-bebop-spike-spiegel.png"><img src="previews/purple/cowboy-bebop-spike-spiegel.png.webp" width="240" alt="Cowboy Bebop Spike Spiegel" /></a><br /><sub>**Cowboy Bebop Spike Spiegel**<br />`4K UHD` • `16:9` • `3.7 MB`</sub> | <a href="purple/dfrohy3-5f12ff02-f76d-4b85-ba6b-bf0bea020c52.jpg"><img src="previews/purple/dfrohy3-5f12ff02-f76d-4b85-ba6b-bf0bea020c52.jpg.webp" width="240" alt="Dfrohy3 5F12Ff02 F76D 4B85 B…" /></a><br /><sub>**Dfrohy3 5F12Ff02 F76D 4B85 B…**<br />`1080p` • `16:9` • `837 KB`</sub> | <a href="purple/firewatch-sunset-valley.jpg"><img src="previews/purple/firewatch-sunset-valley.jpg.webp" width="240" alt="Firewatch Sunset Valley" /></a><br /><sub>**Firewatch Sunset Valley**<br />`8K UHD` • `16:9` • `1.5 MB`</sub> |
+| <a href="purple/mountain-dragon-pink-sky.jpg"><img src="previews/purple/mountain-dragon-pink-sky.jpg.webp" width="240" alt="Mountain Dragon Pink Sky" /></a><br /><sub>**Mountain Dragon Pink Sky**<br />`5K` • `16:9` • `10.6 MB`</sub> | <a href="purple/pearl-dark-abstract.jpg"><img src="previews/purple/pearl-dark-abstract.jpg.webp" width="240" alt="Pearl Dark Abstract" /></a><br /><sub>**Pearl Dark Abstract**<br />`5K` • `16:9` • `10.6 MB`</sub> | <a href="purple/pixel-sunset-lake-reflection.jpg"><img src="previews/purple/pixel-sunset-lake-reflection.jpg.webp" width="240" alt="Pixel Sunset Lake Reflection" /></a><br /><sub>**Pixel Sunset Lake Reflection**<br />`1080p` • `16:9` • `130 KB`</sub> |
+| <a href="purple/purple-snowy-pine-forest.png"><img src="previews/purple/purple-snowy-pine-forest.png.webp" width="240" alt="Purple Snowy Pine Forest" /></a><br /><sub>**Purple Snowy Pine Forest**<br />`1080p` • `16:9` • `1.0 MB`</sub> | <a href="purple/red-fox-snowy-woods.jpg"><img src="previews/purple/red-fox-snowy-woods.jpg.webp" width="240" alt="Red Fox Snowy Woods" /></a><br /><sub>**Red Fox Snowy Woods**<br />`5K` • `5:3` • `8.0 MB`</sub> | |
 
 <div align="right"><sub><a href="#-">⬆ Back to Top</a></sub></div>
 
