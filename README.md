@@ -4,7 +4,7 @@
 
 A curated collection of ultra-high-definition desktop wallpapers, animated pixel-art loops, and live video backdrops.
 
-![Wallpapers](https://img.shields.io/badge/Wallpapers-281_Total-7aa2f7?style=for-the-badge&logo=unsplash&logoColor=white) ![Quality](https://img.shields.io/badge/Quality-4K_%7C_5K_%7C_8K-bb9af7?style=for-the-badge&logo=4k) ![Previews](https://img.shields.io/badge/Previews-WebP_Optimized-9ece6a?style=for-the-badge&logo=webp) ![License](https://img.shields.io/badge/License-MIT-f7768e?style=for-the-badge)
+![Wallpapers](https://img.shields.io/badge/Wallpapers-282_Total-7aa2f7?style=for-the-badge&logo=unsplash&logoColor=white) ![Quality](https://img.shields.io/badge/Quality-4K_%7C_5K_%7C_8K-bb9af7?style=for-the-badge&logo=4k) ![Previews](https://img.shields.io/badge/Previews-WebP_Optimized-9ece6a?style=for-the-badge&logo=webp) ![License](https://img.shields.io/badge/License-MIT-f7768e?style=for-the-badge)
 
 </div>
 
@@ -12,7 +12,7 @@ A curated collection of ultra-high-definition desktop wallpapers, animated pixel
 
 ### 🧭 Category Directory
 
-[`✨ GIFs`](#gifs) <sup>**55**</sup> &nbsp;•&nbsp; [`🌊 Blue`](#blue) <sup>**88**</sup> &nbsp;•&nbsp; [`🌑 Dark`](#dark) <sup>**57**</sup> &nbsp;•&nbsp; [`🌅 Warm`](#warm) <sup>**47**</sup> &nbsp;•&nbsp; [`🔮 Purple`](#purple) <sup>**10**</sup> &nbsp;•&nbsp; [`🌿 Green`](#green) <sup>**11**</sup> &nbsp;•&nbsp; [`☀️ Light`](#light) <sup>**8**</sup> &nbsp;•&nbsp; [`🎬 Videos`](#videos) <sup>**5**</sup>
+[`✨ GIFs`](#gifs) <sup>**55**</sup> &nbsp;•&nbsp; [`🌊 Blue`](#blue) <sup>**89**</sup> &nbsp;•&nbsp; [`🌑 Dark`](#dark) <sup>**57**</sup> &nbsp;•&nbsp; [`🌅 Warm`](#warm) <sup>**47**</sup> &nbsp;•&nbsp; [`🔮 Purple`](#purple) <sup>**10**</sup> &nbsp;•&nbsp; [`🌿 Green`](#green) <sup>**11**</sup> &nbsp;•&nbsp; [`☀️ Light`](#light) <sup>**8**</sup> &nbsp;•&nbsp; [`🎬 Videos`](#videos) <sup>**5**</sup>
 
 ---
 
@@ -46,7 +46,7 @@ A curated collection of ultra-high-definition desktop wallpapers, animated pixel
 ---
 
 ## 🌊 Blue
-> *Arctic Nord, deep oceanic gradients, clear skies & cyan hues* &nbsp; • &nbsp; **88 wallpapers**
+> *Arctic Nord, deep oceanic gradients, clear skies & cyan hues* &nbsp; • &nbsp; **89 wallpapers**
 
 | Preview | Preview | Preview |
 | :---: | :---: | :---: |
@@ -78,8 +78,8 @@ A curated collection of ultra-high-definition desktop wallpapers, animated pixel
 | <a href="blue/wal50.jpg"><img src="previews/blue/wal50.jpg.webp" width="240" alt="Wal50" /></a><br /><sub>**Wal50**<br />`1080p` • `16:9` • `46 KB`</sub> | <a href="blue/wal53.jpg"><img src="previews/blue/wal53.jpg.webp" width="240" alt="Wal53" /></a><br /><sub>**Wal53**<br />`1440p` • `16:9` • `2.2 MB`</sub> | <a href="blue/wal56.jpg"><img src="previews/blue/wal56.jpg.webp" width="240" alt="Wal56" /></a><br /><sub>**Wal56**<br />`4K UHD` • `16:9` • `709 KB`</sub> |
 | <a href="blue/wal57.jpg"><img src="previews/blue/wal57.jpg.webp" width="240" alt="Wal57" /></a><br /><sub>**Wal57**<br />`5K` • `16:9` • `6.0 MB`</sub> | <a href="blue/wal59.jpg"><img src="previews/blue/wal59.jpg.webp" width="240" alt="Wal59" /></a><br /><sub>**Wal59**<br />`1440p` • `16:9` • `216 KB`</sub> | <a href="blue/wal62.png"><img src="previews/blue/wal62.png.webp" width="240" alt="Wal62" /></a><br /><sub>**Wal62**<br />`1080p` • `16:9` • `2.6 MB`</sub> |
 | <a href="blue/wal63.png"><img src="previews/blue/wal63.png.webp" width="240" alt="Wal63" /></a><br /><sub>**Wal63**<br />`1080p` • `16:9` • `2.8 MB`</sub> | <a href="blue/wal70.png"><img src="previews/blue/wal70.png.webp" width="240" alt="Wal70" /></a><br /><sub>**Wal70**<br />`1080p` • `16:9` • `2.7 MB`</sub> | <a href="blue/wal71.png"><img src="previews/blue/wal71.png.webp" width="240" alt="Wal71" /></a><br /><sub>**Wal71**<br />`1080p` • `16:9` • `3.4 MB`</sub> |
-| <a href="blue/waves-waviness-pattern.jpg"><img src="previews/blue/waves-waviness-pattern.jpg.webp" width="240" alt="Waves Waviness Pattern" /></a><br /><sub>**Waves Waviness Pattern**<br />`4K UHD` • `16:9` • `3.3 MB`</sub> | <a href="blue/winding-coastal-road.jpg"><img src="previews/blue/winding-coastal-road.jpg.webp" width="240" alt="Winding Coastal Road" /></a><br /><sub>**Winding Coastal Road**<br />`1440p` • `2:1` • `1.6 MB`</sub> | <a href="blue/wp6124024.jpg"><img src="previews/blue/wp6124024.jpg.webp" width="240" alt="Wp6124024" /></a><br /><sub>**Wp6124024**<br />`1080p` • `16:9` • `219 KB`</sub> |
-| <a href="blue/zelda-guardian-shrine.png"><img src="previews/blue/zelda-guardian-shrine.png.webp" width="240" alt="Zelda Guardian Shrine" /></a><br /><sub>**Zelda Guardian Shrine**<br />`5K` • `16:9` • `1.1 MB`</sub> | | |
+| <a href="blue/wal73.png"><img src="previews/blue/wal73.png.webp" width="240" alt="Wal73" /></a><br /><sub>**Wal73**<br />`1080p` • `16:9` • `2.0 MB`</sub> | <a href="blue/waves-waviness-pattern.jpg"><img src="previews/blue/waves-waviness-pattern.jpg.webp" width="240" alt="Waves Waviness Pattern" /></a><br /><sub>**Waves Waviness Pattern**<br />`4K UHD` • `16:9` • `3.3 MB`</sub> | <a href="blue/winding-coastal-road.jpg"><img src="previews/blue/winding-coastal-road.jpg.webp" width="240" alt="Winding Coastal Road" /></a><br /><sub>**Winding Coastal Road**<br />`1440p` • `2:1` • `1.6 MB`</sub> |
+| <a href="blue/wp6124024.jpg"><img src="previews/blue/wp6124024.jpg.webp" width="240" alt="Wp6124024" /></a><br /><sub>**Wp6124024**<br />`1080p` • `16:9` • `219 KB`</sub> | <a href="blue/zelda-guardian-shrine.png"><img src="previews/blue/zelda-guardian-shrine.png.webp" width="240" alt="Zelda Guardian Shrine" /></a><br /><sub>**Zelda Guardian Shrine**<br />`5K` • `16:9` • `1.1 MB`</sub> | |
 
 <div align="right"><sub><a href="#-">⬆ Back to Top</a></sub></div>
 
