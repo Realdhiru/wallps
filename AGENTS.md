@@ -3,7 +3,7 @@
 ## 1. Absolute Asset & Workflow Non-Negotiables
 
 ### A. Asset Preservation & Integrity
-- **Zero Lossy Master Modifications**: Master wallpaper assets (`blue/`, `dark/`, `warm/`, `purple/`, `green/`, `light/`, `gifs/`, `videos/`) must NEVER be compressed, downscaled, or transcoded in place.
+- **Zero Lossy Master Modifications**: Master wallpaper assets (`nord/`, `ocean/`, `emerald/`, `sakura/`, `sunset/`, `synthwave/`, `gruvbox/`, `dark/`, `light/`, `gifs/`, `videos/`) must NEVER be compressed, downscaled, or transcoded in place.
 - **Preview Isolation**: Generated previews live exclusively in `previews/<category>/<filename>.webp` (640px max width).
 - **Strict Naming Standard**: All filenames must strictly follow lowercase `kebab-case.<ext>` with no spaces, special characters, uppercase letters, camera hashes, or timestamps.
 

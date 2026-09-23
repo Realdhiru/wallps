@@ -15,14 +15,17 @@ from fractions import Fraction
 from pathlib import Path
 
 CATEGORY_CONFIG = {
+    "nord": {"title": "Nord", "icon": "❄️", "desc": "Arctic frost, icy cyan gradients, frosty teal & polar minimalism"},
+    "ocean": {"title": "Ocean", "icon": "🌊", "desc": "Deep sapphire, cobalt horizons, midnight navy & oceanic abyss"},
+    "emerald": {"title": "Emerald", "icon": "🌿", "desc": "Verdant moss, enchanted forests, misty pines & calming sage"},
+    "sakura": {"title": "Sakura", "icon": "🌸", "desc": "Pastel cherry blossoms, soft blush, romantic rose & floral twilights"},
+    "sunset": {"title": "Sunset", "icon": "🌅", "desc": "Fiery crimson skies, golden hour ambers, scarlet horizons & twilight glow"},
+    "synthwave": {"title": "Synthwave", "icon": "🔮", "desc": "Cyberpunk neon, electric violet, retrowave magenta & glowing cityscapes"},
+    "gruvbox": {"title": "Gruvbox", "icon": "🍂", "desc": "Warm autumn earth, retro mustard, cozy sepia & vintage rust"},
+    "dark": {"title": "Dark", "icon": "🌑", "desc": "True OLED blacks, cyber-noir, moody midnight & low-luminance minimalism"},
+    "light": {"title": "Light", "icon": "☀️", "desc": "Zen watercolor, high-key parchment, clean airy whites & subtle brushwork"},
     "gifs": {"title": "GIFs", "icon": "✨", "desc": "Animated pixel art, aesthetic retro loops & 60fps micro-animations"},
-    "blue": {"title": "Blue", "icon": "🌊", "desc": "Arctic Nord, deep oceanic gradients, clear skies & cyan hues"},
-    "dark": {"title": "Dark", "icon": "🌑", "desc": "True OLED blacks, moody midnight aesthetics & low-luminance minimalism"},
-    "warm": {"title": "Warm", "icon": "🌅", "desc": "Golden sunsets, fiery crimson horizons, autumn tones & cozy ambers"},
-    "purple": {"title": "Purple", "icon": "🔮", "desc": "Synthwave magenta, cyberpunk neon, violet twilights & lavender"},
-    "green": {"title": "Green", "icon": "🌿", "desc": "Verdant forests, mossy streams, nature vistas & calming emerald"},
-    "light": {"title": "Light", "icon": "☀️", "desc": "High-key zen minimalism, clean watercolor & airy compositions"},
-    "videos": {"title": "Videos", "icon": "🎬", "desc": "Seamless Ultra-HD live wallpapers for mpvpaper and animated backends"},
+    "videos": {"title": "Videos", "icon": "🎬", "desc": "Ultra-HD live wallpapers for mpvpaper and animated backends"},
 }
 
 VALID_EXTENSIONS = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".mp4"}
@@ -254,7 +257,7 @@ def generate_markdown(repo_dir, catalog):
     lines.append("```bash")
     lines.append("git clone --filter=blob:none --sparse git@github.com:Realdhiru/wallps.git ~/Pictures/Wallpapers")
     lines.append("cd ~/Pictures/Wallpapers")
-    lines.append("git sparse-checkout set gifs blue dark warm")
+    lines.append("git sparse-checkout set nord ocean dark gruvbox sakura")
     lines.append("```")
     lines.append("")
     lines.append("### 🖥️ Setting Wallpapers on Hyprland & Linux")
@@ -337,9 +340,15 @@ def main():
                 continue
             ext = os.path.splitext(f)[1].lower()
             if ext in VALID_EXTENSIONS:
-                meta = extract_metadata_and_preview(repo_dir, cat_key, f)
-                catalog[cat_key].append(meta)
-                total_scanned += 1
+                source_path = os.path.join(cat_dir, f)
+                if not os.path.isfile(source_path):
+                    continue
+                try:
+                    meta = extract_metadata_and_preview(repo_dir, cat_key, f)
+                    catalog[cat_key].append(meta)
+                    total_scanned += 1
+                except FileNotFoundError:
+                    continue
                 
         print(f"  • {cat_key}: {len(catalog[cat_key])} wallpapers processed")
         

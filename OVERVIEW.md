@@ -25,13 +25,16 @@ walpp/
 │   ├── wallpaper_watcher.sh        # inotifywait event daemon
 │   └── wallpaper-watcher.service   # Systemd user service unit definition
 ├── previews/                       # Generated WebP thumbnails (mirrors category structure)
-├── gifs/                           # Animated pixel art, lofi chill loops, 16-bit retro
-├── blue/                           # Azure, arctic Nord, cyan, alpine lakes, clear skies
-├── dark/                           # Low-luminance, OLED black, cyber-noir, midnight
-├── warm/                           # Sunset amber, fiery crimson, golden autumn, warm glows
-├── purple/                         # Synthwave magenta, violet twilight, lavender
-├── green/                          # Verdant meadows, mossy waterfalls, pastoral landscapes
-├── light/                          # High-key minimal compositions, zen ink, watercolor
+├── nord/                           # Arctic frost, icy cyan, frosty teal, polar minimalism
+├── ocean/                          # Deep sapphire, cobalt horizons, midnight navy, oceanic abyss
+├── emerald/                        # Verdant moss, enchanted forests, misty pines, calming sage
+├── sakura/                         # Pastel cherry blossoms, soft blush, romantic rose, floral twilights
+├── sunset/                         # Fiery crimson skies, golden hour ambers, scarlet horizons
+├── synthwave/                      # Cyberpunk neon, electric violet, retrowave magenta, glowing cityscapes
+├── gruvbox/                        # Warm autumn earth, retro mustard, cozy sepia, vintage rust
+├── dark/                           # Low-luminance, OLED black, cyber-noir, moody midnight minimalism
+├── light/                          # High-key minimal compositions, zen watercolor, clean parchment
+├── gifs/                           # Animated pixel art, aesthetic retro loops & 60fps micro-animations
 ├── videos/                         # Ultra-HD live MP4 wallpapers for video backends
 ├── LICENSE                         # MIT License
 ├── README.md                       # Visual showcase gallery and client setup guide
@@ -42,27 +45,18 @@ walpp/
 
 ## 3. Color Classification Pipeline
 
-Static images are classified into shade categories using raw 32×32 pixel HSV analysis:
+Static images are classified into curated aesthetic shade categories using raw 32×32 pixel HSV distribution:
 
-```text
-[Input Image] ───► [Scale to 32x32 RGB] ───► [Convert to HSV]
-                                                    │
-                   ┌────────────────────────────────┴────────────────────────────────┐
-                   ▼                                                                 ▼
-        [Brightness / Luminance]                                            [Chromatic Weight]
-     Avg Value < 0.20 or >65% Black                                    Sum of (Saturation × Value)
-                   │                                                                 │
-                   ├─► "dark"                                                        ├─► Hue < 65° / > 335° ──► "warm"
-                   │                                                                 ├─► Hue 65°–165°        ──► "green"
-     Avg Value > 0.75, Low Saturation                                                ├─► Hue 165°–260°       ──► "blue"
-                   │                                                                 └─► Hue 260°–335°       ──► "purple"
-                   └─► "light"
-```
-
-- **Dark**: High density of pixels with Value < 0.22 or overall dark luminance.
-- **Light**: Predominantly high brightness (Value > 0.75) with minimal saturation (< 0.25).
-- **Hue-Dominant (Warm / Green / Blue / Purple)**: Pixels vote for their respective color bins weighted by Saturation × Value, preventing neutral dark or light areas from skewing chromatic classification.
-- **Format Overrides**: Animated files (`.gif`) and video files (`.mp4`) are automatically routed to `gifs/` and `videos/` respectively, bypassing color classification.
+- **Dark**: Low-luminance average Value < 0.20 or >65% OLED pitch black pixels.
+- **Light**: High-luminance average Value > 0.78 with low saturation (< 0.22).
+- **Sakura**: Soft pink and rose tones (Hue 315°–355° or 355°–18° with high lightness / moderate saturation).
+- **Sunset**: Fiery crimson, scarlet, and golden amber (Hue 0°–45° with high saturation & value).
+- **Gruvbox**: Warm earthy browns, retro mustard, cozy sepia, and autumn rust (Hue 18°–68° with earthy saturation).
+- **Emerald**: Forest greens, mossy streams, misty pines, and sage (Hue 68°–165°).
+- **Nord**: Polar frost, icy cyan, and arctic teal (Hue 165°–205°).
+- **Ocean**: Deep sapphire, cobalt, twilight navy, and deep-sea blues (Hue 205°–260°).
+- **Synthwave**: Cyberpunk neon, electric violet, and vivid magenta (Hue 260°–315° with high saturation).
+- **Format Overrides**: Animated files (`.gif`) and video files (`.mp4`, `.mkv`, `.webm`, `.mov`) are automatically routed to `gifs/` and `videos/` respectively.
 
 ---
 

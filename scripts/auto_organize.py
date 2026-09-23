@@ -3,8 +3,8 @@
 scripts/auto_organize.py
 Zero-touch wallpaper ingestion engine.
 Detects dropped wallpapers, cleans filenames to kebab-case,
-classifies color shades or media formats, generates previews,
-rebuilds the README gallery, and auto-commits to Git.
+classifies into curated aesthetic rice shade folders, generates previews,
+and rebuilds the README gallery without automatic git commits.
 """
 
 import os
@@ -20,7 +20,17 @@ from pathlib import Path
 
 REPO_DIR = Path(__file__).resolve().parent.parent
 VALID_EXTS = {".jpg", ".jpeg", ".png", ".gif", ".mp4", ".webp"}
-KNOWN_CATEGORIES = {"dark", "blue", "warm", "purple", "green", "light", "gifs", "videos"}
+KNOWN_CATEGORIES = {
+    "nord", "ocean", "emerald", "sakura", "sunset",
+    "synthwave", "gruvbox", "dark", "light", "gifs", "videos"
+}
+
+GENERIC_NAMES_RE = re.compile(
+    r"^(wal\d*|wallpaper\d*|image\d*|download\d*|img\d*|screenshot\d*|\d+|"
+    r"picture\d*|photo\d*|unnamed\d*|desktop\d*|background\d*|dsc\d*|wallhaven\d*)$",
+    re.IGNORECASE
+)
+HASH_RE = re.compile(r"^([a-z0-9]{6}|[a-f0-9\-]{16,})$", re.IGNORECASE)
 
 def notify_desktop(title, body, icon="preferences-desktop-wallpaper"):
     """Send a desktop notification via notify-send (non-blocking, best-effort)."""
@@ -55,23 +65,22 @@ SEARCH_LOG_PATHS = [
 def clean_text_to_kebab(text):
     if not text:
         return ""
-    # Unquote URL encoding
     text = urllib.parse.unquote(text)
-    # Remove file extensions if at the end
     text = re.sub(r"\.(jpg|jpeg|png|gif|mp4|webp|webm)$", "", text, flags=re.IGNORECASE)
-    # Strip site prefixes specifically
     text = re.sub(r"(?i)^(wallpaperflare\.com|wallhaven|deviantart|artstation)[_\-\.]+", "", text)
-    # Strip resolution tokens and generic web clutter
     text = re.sub(r"(?i)\b(\d+k|uhd|fhd|1080p|1440p|2160p|ultra\s*hd)\b", " ", text)
-    text = re.sub(r"(?i)\b(free\s*download)\b", " ", text)
-    # Split camelCase / PascalCase
+    text = re.sub(r"(?i)\b(free\s*download|wallpaper|background|desktop)\b", " ", text)
     text = re.sub(r"([a-z0-9])([A-Z])", r"\1 \2", text)
-    # Lowercase
     text = text.lower()
-    # Replace non-alphanumeric with dashes
     text = re.sub(r"[^a-z0-9]+", "-", text)
-    # Collapse multiple dashes and strip
     return re.sub(r"-+", "-", text).strip("-")
+
+def is_name_generic_or_hash(name):
+    if not name or len(name) < 3:
+        return True
+    if GENERIC_NAMES_RE.match(name) or HASH_RE.match(name):
+        return True
+    return False
 
 def lookup_search_metadata(filename):
     """Finds URL or search query for a ddg_ downloaded file."""
@@ -88,7 +97,6 @@ def lookup_search_metadata(filename):
             except Exception:
                 pass
 
-    # If not found directly, check latest search query in logs
     latest_query = ""
     for log_path in SEARCH_LOG_PATHS:
         if log_path.exists():
@@ -104,7 +112,7 @@ def lookup_search_metadata(filename):
 
     return "", latest_query
 
-def sanitize_name(filename):
+def sanitize_name(filename, category=None):
     stem = Path(filename).stem
     ext = Path(filename).suffix.lower()
     if ext == ".jpeg":
@@ -112,38 +120,46 @@ def sanitize_name(filename):
 
     clean = ""
 
-    # If it is a DDG search download
+    # Case A: DDG search download
     if stem.startswith("ddg_"):
         full_url, title = lookup_search_metadata(Path(filename).name)
-        # Try title first
         if title:
             cand = clean_text_to_kebab(title)
-            if cand and not cand.isdigit() and len(cand) >= 3:
+            if cand and not is_name_generic_or_hash(cand):
                 clean = cand
 
-        # Try URL path basename next
         if not clean and full_url:
             parsed_path = urllib.parse.urlparse(full_url).path
             url_stem = Path(parsed_path).stem
             cand = clean_text_to_kebab(url_stem)
-            if cand and not cand.isdigit() and len(cand) >= 3:
+            if cand and not is_name_generic_or_hash(cand):
                 clean = cand
 
-        # Try query fallback
         if not clean and title:
             cand = clean_text_to_kebab(title)
             if cand:
                 clean = cand
 
-        # Last resort: use a short slice of the uuid
         if not clean:
-            clean = "wallpaper-" + stem[4:12]
+            prefix = category if category else "aesthetic"
+            clean = f"{prefix}-wallpaper-{stem[4:12]}"
     else:
-        # Manual filename sanitization
-        clean = clean_text_to_kebab(stem)
+        # Case B: Direct file drop
+        cand = clean_text_to_kebab(stem)
+        if cand and not is_name_generic_or_hash(cand):
+            clean = cand
+        else:
+            # Check latest search query as fallback
+            _, latest_query = lookup_search_metadata("")
+            if latest_query:
+                q_clean = clean_text_to_kebab(latest_query)
+                if q_clean and not is_name_generic_or_hash(q_clean):
+                    clean = q_clean
 
-    if not clean:
-        clean = "wallpaper"
+            if not clean:
+                prefix = category if category else "aesthetic"
+                uuid_slice = hex(int(time.time() * 1000))[-6:]
+                clean = f"{prefix}-wallpaper-{uuid_slice}"
 
     return f"{clean}{ext}"
 
@@ -165,38 +181,68 @@ def classify_static(filepath):
     avg_v = sum(p[2] for p in pixels) / n
     avg_s = sum(p[1] for p in pixels) / n
     dark_count = sum(1 for p in pixels if p[2] < 0.22)
-    light_count = sum(1 for p in pixels if p[2] > 0.75 and p[1] < 0.25)
+    light_count = sum(1 for p in pixels if p[2] > 0.75 and p[1] < 0.28)
+
+    # Check for OLED / midnight noir first
+    if avg_v < 0.20 or (dark_count / n > 0.65 and avg_s < 0.35):
+        return "dark"
+    if avg_v > 0.78 and avg_s < 0.22 and light_count / n > 0.45:
+        return "light"
 
     hue_weights = defaultdict(float)
     chromatic_weight = 0.0
 
     for h, s, v in pixels:
-        if v < 0.18 or s < 0.15:
+        if v < 0.16 or s < 0.12:
             continue
         w = s * v
         chromatic_weight += w
-        if (0 <= h < 65) or (335 <= h <= 360):
-            hue_weights["warm"] += w
-        elif 65 <= h < 165:
-            hue_weights["green"] += w
-        elif 165 <= h < 260:
-            hue_weights["blue"] += w
-        elif 260 <= h < 335:
-            hue_weights["purple"] += w
 
-    if avg_v < 0.20 or (dark_count / n > 0.65 and chromatic_weight < 85):
-        return "dark"
-    if avg_v > 0.75 and avg_s < 0.25 and light_count / n > 0.45:
-        return "light"
-    if chromatic_weight > 25 and hue_weights:
-        return max(hue_weights.items(), key=lambda x: x[1])[0]
-    if avg_v < 0.35:
-        return "dark"
-    if avg_v > 0.65:
-        return "light"
+        # Sakura / Pink / Rose (H: 315-355 with moderate/high V and S < 0.75 or soft pink)
+        if 315 <= h < 355:
+            if s > 0.65 and v < 0.70:
+                hue_weights["synthwave"] += w * 1.2
+            else:
+                hue_weights["sakura"] += w * 1.3
+        elif (355 <= h <= 360) or (0 <= h < 18):
+            if v > 0.65 and s < 0.55:
+                hue_weights["sakura"] += w * 1.1
+            else:
+                hue_weights["sunset"] += w * 1.2
+        elif 18 <= h < 45:
+            # Sunset (fiery orange/red) vs Gruvbox (earthy amber/brown)
+            if s > 0.60 and v > 0.60:
+                hue_weights["sunset"] += w * 1.2
+            else:
+                hue_weights["gruvbox"] += w * 1.2
+        elif 45 <= h < 68:
+            # Gruvbox (warm yellow/mustard/sepia)
+            hue_weights["gruvbox"] += w * 1.3
+        elif 68 <= h < 165:
+            # Emerald (forest, nature, sage, matcha)
+            hue_weights["emerald"] += w * 1.2
+        elif 165 <= h < 205:
+            # Nord (icy cyan, teal, arctic frost)
+            hue_weights["nord"] += w * 1.3
+        elif 205 <= h < 260:
+            # Ocean (deep blue, cobalt, navy)
+            hue_weights["ocean"] += w * 1.2
+        elif 260 <= h < 315:
+            # Synthwave (cyberpunk neon, electric violet, magenta)
+            hue_weights["synthwave"] += w * 1.3
+
+    if chromatic_weight < 20:
+        if avg_v < 0.35:
+            return "dark"
+        if avg_v > 0.65:
+            return "light"
+
     if hue_weights:
         return max(hue_weights.items(), key=lambda x: x[1])[0]
-    return "dark"
+
+    if avg_v < 0.35:
+        return "dark"
+    return "light"
 
 def update_active_wallpaper_references(old_path, new_path):
     current_txt = Path.home() / ".cache" / "current_wallpaper.txt"
@@ -235,7 +281,7 @@ def process_file(filepath, force=False):
     if len(parts) == 2 and parts[0] in KNOWN_CATEGORIES:
         category = parts[0]
         cat_dir = REPO_DIR / category
-        clean_name = sanitize_name(path.name)
+        clean_name = sanitize_name(path.name, category=category)
         dest_path = cat_dir / clean_name
 
         if dest_path != path:
@@ -249,14 +295,16 @@ def process_file(filepath, force=False):
             shutil.move(str(path), str(dest_path))
             print(f"Renamed in {category}: {path.name} -> {dest_path.name}")
             update_active_wallpaper_references(path, dest_path)
+        else:
+            preview_path = REPO_DIR / "previews" / category / f"{path.name}.webp"
+            if preview_path.exists():
+                return path
     # Case 2: File is dropped in repository root or needs categorization
     else:
-        # If the QuickShell wallpaper picker is currently open/active, do not shift yet
         if is_picker_active() and not force:
             print(f"Skipping {path.name}: wallpaper picker is currently active (will organize on close)")
             return None
 
-        clean_name = sanitize_name(path.name)
         if ext == ".gif":
             category = "gifs"
         elif ext == ".mp4":
@@ -264,6 +312,7 @@ def process_file(filepath, force=False):
         else:
             category = classify_static(path)
 
+        clean_name = sanitize_name(path.name, category=category)
         cat_dir = REPO_DIR / category
         cat_dir.mkdir(exist_ok=True)
         dest_path = cat_dir / clean_name
@@ -280,21 +329,10 @@ def process_file(filepath, force=False):
         update_active_wallpaper_references(path, dest_path)
         notify_desktop("Wallpaper Added", f"{dest_path.name}\n→ {category}/")
 
-    # Regenerate gallery and preview
+    # Regenerate gallery and preview (leaves working tree unstaged for user review)
     print("Updating previews and README...")
     subprocess.run(["python3", str(REPO_DIR / "scripts" / "generate_gallery.py"), str(REPO_DIR)],
                    check=True)
-
-    # Auto Git Commit & Push (safely stage only organized destination, README, and previews)
-    try:
-        rel_dest = str(dest_path.relative_to(REPO_DIR))
-        subprocess.run(["git", "add", "README.md", "previews/", rel_dest], cwd=REPO_DIR, check=True)
-        commit_msg = f"Auto-add wallpaper: {dest_path.name} ({category})"
-        subprocess.run(["git", "commit", "-m", commit_msg], cwd=REPO_DIR, check=True)
-        subprocess.Popen(["git", "push", "origin", "main"], cwd=REPO_DIR)
-        print("Auto-pushed changes to GitHub in background.")
-    except subprocess.CalledProcessError:
-        pass
 
     return dest_path
 
@@ -330,28 +368,13 @@ def handle_delete(filepath):
             except OSError:
                 pass
 
-        # Regenerate gallery and clean any orphaned previews
         print(f"Updating gallery after deleting {filename}...")
         subprocess.run(["python3", str(REPO_DIR / "scripts" / "generate_gallery.py"), str(REPO_DIR)],
                        check=True)
 
-        # Auto Git Commit & Push (safely stage only category folder, README, and previews)
-        try:
-            subprocess.run(["git", "add", "-u", category], cwd=REPO_DIR, check=True)
-            subprocess.run(["git", "add", "README.md", "previews/"], cwd=REPO_DIR, check=True)
-            diff_check = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=REPO_DIR)
-            if diff_check.returncode != 0:
-                commit_msg = f"Delete wallpaper: {filename} ({category})"
-                subprocess.run(["git", "commit", "-m", commit_msg], cwd=REPO_DIR, check=True)
-                subprocess.Popen(["git", "push", "origin", "main"], cwd=REPO_DIR)
-                print(f"Auto-committed and pushed deletion of {filename}")
-        except subprocess.CalledProcessError as e:
-            print(f"Git commit error: {e}")
-
         notify_desktop("Wallpaper Deleted", f"{filename} removed from {category}/", icon="user-trash")
 
 def scan_root_inbox(force=False):
-    # Scan root of REPO_DIR for loose wallpapers
     for entry in os.listdir(REPO_DIR):
         p = REPO_DIR / entry
         if p.is_file() and p.suffix.lower() in VALID_EXTS:
@@ -364,23 +387,10 @@ if __name__ == "__main__":
         elif sys.argv[1] == "--sync":
             scan_root_inbox(force=True)
             subprocess.run(["python3", str(REPO_DIR / "scripts" / "generate_gallery.py"), str(REPO_DIR)], check=True)
-            # Auto git commit & push after full sync
-            try:
-                subprocess.run(["git", "add", "-A"], cwd=REPO_DIR, check=True)
-                diff_check = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=REPO_DIR)
-                if diff_check.returncode != 0:
-                    subprocess.run(["git", "commit", "-m", "Sync: reorganize wallpapers & update gallery"], cwd=REPO_DIR, check=True)
-                    subprocess.Popen(["git", "push", "origin", "main"], cwd=REPO_DIR)
-                    print("Auto-committed and pushed sync changes.")
-                    notify_desktop("Wallpaper Sync", "Gallery synced and pushed to GitHub.")
-                else:
-                    print("No changes to commit after sync.")
-            except subprocess.CalledProcessError as e:
-                print(f"Git sync error: {e}")
+            notify_desktop("Wallpaper Sync", "Gallery synchronized across all categories.")
         elif sys.argv[1] in ("--force", "--now"):
             scan_root_inbox(force=True)
         else:
             process_file(sys.argv[1])
     else:
         scan_root_inbox()
-
